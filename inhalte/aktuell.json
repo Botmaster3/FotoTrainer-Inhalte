@@ -1,0 +1,4985 @@
+{
+  "format": "fototrainer-inhalte",
+  "name": "FotoTrainer-Inhalte",
+  "version": "1",
+  "minAppVersion": "2.1",
+  "date": "2026-11-03",
+  "notes": "",
+  "cameras": [
+    {
+      "id": "canon-90d",
+      "brand": "Canon",
+      "model": "EOS 90D",
+      "kind": "dslr",
+      "series": "EOS (Spiegelreflex)",
+      "alsoApplies": "viele Canon-Spiegelreflexkameras wie EOS 80D, 850D, 250D und 2000D (Einsteigermodelle ohne hinteres Schnellwahlrad – dort ändert man die Blende in M mit Av±-Taste + Hauptwahlrad)",
+      "overview": "Spiegelreflexkamera: Du schaust durch einen optischen Sucher direkt durchs Objektiv. Helligkeitsänderungen siehst du deshalb erst auf dem fertigen Foto (oder im Live-View). Oben rechts gibt es ein Schulterdisplay mit allen Werten, daneben die Tasten für ISO, AF und Drive.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "A+",
+          "howTo": "Modusrad auf A+ (Automatische Motiverkennung)."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Mit dem Hauptwahlrad verschiebst du die Kombination (Programmverschiebung)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "Av",
+          "howTo": "Modusrad auf Av. Die Blende stellst du mit dem Hauptwahlrad ein."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "Tv",
+          "howTo": "Modusrad auf Tv. Die Zeit stellst du mit dem Hauptwahlrad ein."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Hauptwahlrad = Zeit, Schnellwahlrad hinten = Blende."
+        },
+        {
+          "mode": "bulb",
+          "label": "B",
+          "howTo": "Eigene Position B auf dem Modusrad. Im Menü gibt es zusätzlich einen Bulb-Timer."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben links (mit Entriegelungsknopf)",
+          "howTo": "Knopf in der Mitte drücken und drehen.",
+          "elements": [
+            "mode-dial"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Hauptwahlrad (Av) bzw. Schnellwahlrad hinten (M)",
+          "howTo": "In Av mit dem Hauptwahlrad hinter dem Auslöser, in M mit dem großen Rad auf der Rückseite.",
+          "elements": [
+            "main-dial",
+            "qcd"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Hauptwahlrad hinter dem Auslöser",
+          "howTo": "In Tv und M am Hauptwahlrad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "ISO-Taste oben vor dem Schulterdisplay",
+          "howTo": "ISO-Taste drücken und mit dem Hauptwahlrad den Wert wählen; „AUTO“ aktiviert Auto-ISO. Der Wert erscheint im Schulterdisplay und im Sucher.",
+          "elements": [
+            "iso",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Schnellwahlrad hinten (in P, Av, Tv)",
+          "howTo": "Am großen Rad auf der Rückseite drehen – die Markierung auf der Skala im Sucher wandert.",
+          "elements": [
+            "qcd"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "Q-Taste auf der Rückseite",
+          "howTo": "Öffnet die Schnelleinstellung auf dem Display.",
+          "elements": [
+            "q"
+          ]
+        }
+      ],
+      "tips": [
+        "Durch den optischen Sucher siehst du die Belichtung nicht vorab – kontrolliere das Foto und das Histogramm nach der Aufnahme.",
+        "Im Live-View (Display) zeigt die 90D die Belichtung bereits vor der Aufnahme an.",
+        "Das Schulterdisplay zeigt alle Werte auf einen Blick, auch bei ausgeschaltetem Display."
+      ],
+      "layout": {
+        "body": "dslr",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 22,
+            "y": 24,
+            "label": "Modusrad (A+/P/Tv/Av/M/B)",
+            "r": 6.5,
+            "text": "Av"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 72,
+            "y": 24,
+            "label": "Schulterdisplay",
+            "w": 16,
+            "h": 9
+          },
+          {
+            "id": "iso",
+            "view": "top",
+            "type": "button",
+            "x": 72,
+            "y": 15,
+            "label": "ISO-Taste",
+            "r": 1.8,
+            "text": "ISO"
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 84,
+            "y": 40,
+            "label": "Auslöser",
+            "r": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 76,
+            "y": 42,
+            "label": "Hauptwahlrad",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "ovf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Optischer Sucher",
+            "w": 14,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 40,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 32
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 12,
+            "y": 13,
+            "label": "MENU-Taste",
+            "r": 2.6,
+            "text": "MENU"
+          },
+          {
+            "id": "q",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "Q-Taste (Schnellmenü)",
+            "r": 2.6,
+            "text": "Q"
+          },
+          {
+            "id": "qcd",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 46,
+            "label": "Schnellwahlrad (hinten)",
+            "r": 9
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          }
+        ]
+      },
+      "level": "einsteiger"
+    },
+    {
+      "id": "canon-r6ii",
+      "brand": "Canon",
+      "model": "EOS R6 Mark II",
+      "alsoApplies": "viele Canon EOS R- und EOS-DSLR-Modelle wie EOS R6, R7, R8, R5 sowie EOS 90D (Einsteigermodelle teils ohne hinteres Rad)",
+      "overview": "Canon nennt die Halbautomatiken Av und Tv statt A und S. Die wichtigsten Bedienelemente sind das Hauptwahlrad direkt hinter dem Auslöser, ein zweites Schnellwahlrad oben bzw. das Schnellwahlrad auf der Rückseite und die Q-Taste für das Schnellmenü.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "A+",
+          "howTo": "Modusrad auf A+ (Automatische Motiverkennung). Die Kamera wählt alles selbst."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Mit dem Hauptwahlrad verschiebst du die Kombination aus Blende und Zeit (Programmverschiebung, im Display „P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "Av",
+          "howTo": "Modusrad auf Av (Aperture value = Blendenwert). Die Blende stellst du mit dem Hauptwahlrad ein, die Kamera wählt die Zeit."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "Tv",
+          "howTo": "Modusrad auf Tv (Time value = Zeitwert). Die Verschlusszeit stellst du mit dem Hauptwahlrad ein, die Kamera wählt die Blende."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Hauptwahlrad = Verschlusszeit, Schnellwahlrad = Blende. Die Belichtungsstufenanzeige zeigt die Abweichung."
+        },
+        {
+          "mode": "bulb",
+          "label": "B",
+          "howTo": "Eigene Position B auf dem Modusrad. Blende mit dem Rad, ISO wie gewohnt. Im Menü gibt es zusätzlich einen Bulb-Timer für eine feste Belichtungsdauer."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben rechts (mit Entriegelungsknopf)",
+          "howTo": "Knopf in der Mitte drücken und drehen. Zusätzlich gibt es Fv (flexible Automatik), bei der du jeden Wert einzeln auf AUTO stellen kannst, sowie C1–C3 für eigene Einstellungen.",
+          "elements": [
+            "mode-dial"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Hauptwahlrad (oben, direkt hinter dem Auslöser) bzw. Schnellwahlrad",
+          "howTo": "In Av mit dem Hauptwahlrad. In M mit dem Schnellwahlrad. Bei RF-Objektiven lässt sich auch der Steuerring am Objektiv mit der Blende belegen.",
+          "elements": [
+            "main-dial",
+            "qcd1"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Hauptwahlrad",
+          "howTo": "In Tv und M mit dem Hauptwahlrad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "M-Fn-Taste oben neben dem Auslöser oder Q-Menü",
+          "howTo": "M-Fn-Taste drücken, ISO auswählen und mit dem Hauptwahlrad einstellen. „AUTO“ aktiviert Auto-ISO. Bereich und längste Zeit legst du im Aufnahmemenü unter „ISO-Empfindlichkeit“ fest.",
+          "elements": [
+            "mfn",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Schnellwahlrad (in P, Av und Tv)",
+          "howTo": "In P, Av und Tv am Schnellwahlrad drehen – die Markierung auf der Skala wandert. In M mit Auto-ISO funktioniert die Korrektur über das Q-Menü bzw. die M-Fn-Taste.",
+          "elements": [
+            "qcd1"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "Q-Taste auf der Rückseite (bei manchen Modellen Q/SET)",
+          "howTo": "Öffnet die Schnelleinstellung. Mit dem Multicontroller oder Touchscreen navigieren.",
+          "elements": [
+            "q"
+          ]
+        }
+      ],
+      "tips": [
+        "Canon zählt in Av und Tv: Das Kürzel zeigt immer, welchen Wert DU einstellst.",
+        "Fv ist ideal zum Lernen: Du schaltest gezielt einzelne Werte auf AUTO.",
+        "Unter „Individualfunktionen → Bedienelemente anpassen“ kannst du die Räder neu belegen."
+      ],
+      "kind": "mirrorless",
+      "series": "EOS R (spiegellos)",
+      "layout": {
+        "body": "mirrorless",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 86,
+            "y": 21,
+            "label": "Modusrad (A+/Fv/P/Tv/Av/M/B)",
+            "r": 6,
+            "text": "Av"
+          },
+          {
+            "id": "power",
+            "view": "top",
+            "type": "lever",
+            "x": 20,
+            "y": 24,
+            "label": "Ein/Aus & Foto/Video",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 82,
+            "y": 40,
+            "label": "Auslöser",
+            "r": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 72,
+            "y": 42,
+            "label": "Hauptwahlrad",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "mfn",
+            "view": "top",
+            "type": "button",
+            "x": 67,
+            "y": 33,
+            "label": "M-Fn-Taste (u. a. ISO)",
+            "r": 2,
+            "text": "M-Fn"
+          },
+          {
+            "id": "qcd2",
+            "view": "top",
+            "type": "wheel",
+            "x": 72,
+            "y": 17,
+            "label": "Schnellwahlrad 2",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "evf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Elektronischer Sucher",
+            "w": 16,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 38,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 36
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 14,
+            "y": 13,
+            "label": "MENU-Taste",
+            "r": 2.6,
+            "text": "MENU"
+          },
+          {
+            "id": "q",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 28,
+            "label": "Q-Taste (Schnellmenü)",
+            "r": 2.6,
+            "text": "Q"
+          },
+          {
+            "id": "qcd1",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 45,
+            "label": "Schnellwahlrad 1 (hinten)",
+            "r": 8.5
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          }
+        ]
+      },
+      "level": "einsteiger"
+    },
+    {
+      "id": "canon-5div",
+      "brand": "Canon",
+      "model": "EOS 5D Mark IV",
+      "kind": "dslr",
+      "series": "EOS (Spiegelreflex, Vollformat)",
+      "alsoApplies": "viele größere Canon-Spiegelreflexkameras wie EOS 5D Mark III, 6D Mark II und 7D Mark II",
+      "overview": "Vollformat-Spiegelreflex für Profis und Fortgeschrittene. Bedienung wie bei den kleineren Canon-DSLRs, aber mit mehr Direkttasten: oben neben dem Schulterdisplay sitzen Doppeltasten (u. a. ISO), hinten ein großes Schnellwahlrad mit Sperrschalter.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "A+",
+          "howTo": "Modusrad auf A+ (Automatische Motiverkennung)."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Mit dem Hauptwahlrad verschiebst du die Kombination (Programmverschiebung)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "Av",
+          "howTo": "Modusrad auf Av. Die Blende stellst du mit dem Hauptwahlrad ein."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "Tv",
+          "howTo": "Modusrad auf Tv. Die Zeit stellst du mit dem Hauptwahlrad ein."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Hauptwahlrad = Zeit, Schnellwahlrad hinten = Blende."
+        },
+        {
+          "mode": "bulb",
+          "label": "B",
+          "howTo": "Eigene Position B auf dem Modusrad. Mit Fernauslöser oder Bulb-Timer im Menü für sehr lange Belichtungen."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben links (mit Entriegelungsknopf)",
+          "howTo": "Knopf drücken und drehen. C1–C3 sind Speicherplätze für eigene Einstellungen.",
+          "elements": [
+            "mode-dial"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Hauptwahlrad (Av) bzw. Schnellwahlrad hinten (M)",
+          "howTo": "In Av mit dem Hauptwahlrad hinter dem Auslöser, in M mit dem großen Rad auf der Rückseite (Sperrschalter LOCK muss offen sein).",
+          "elements": [
+            "main-dial",
+            "qcd"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Hauptwahlrad hinter dem Auslöser",
+          "howTo": "In Tv und M am Hauptwahlrad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "Taste ISO oben vor dem Schulterdisplay",
+          "howTo": "ISO-Taste drücken und mit dem Hauptwahlrad den Wert wählen; „AUTO“ aktiviert Auto-ISO. Der Wert erscheint im Schulterdisplay und im Sucher.",
+          "elements": [
+            "iso",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Schnellwahlrad hinten (in P, Av, Tv)",
+          "howTo": "Am großen Rad auf der Rückseite drehen – die Markierung der Belichtungsskala im Sucher wandert. Steht der Sperrschalter auf LOCK, reagiert das Rad nicht.",
+          "elements": [
+            "qcd",
+            "lock"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "Q-Taste auf der Rückseite",
+          "howTo": "Öffnet die Schnelleinstellung auf dem Display.",
+          "elements": [
+            "q"
+          ]
+        }
+      ],
+      "tips": [
+        "Der LOCK-Schalter verhindert versehentliches Verstellen – wundere dich nicht, wenn das hintere Rad „nicht geht“.",
+        "Der Sucher zeigt 100 % des Bildes – was du siehst, ist auf dem Foto.",
+        "Die Belichtung siehst du erst nach der Aufnahme bzw. im Live-View; Histogramm prüfen."
+      ],
+      "layout": {
+        "body": "dslr",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 22,
+            "y": 24,
+            "label": "Modusrad (A+/P/Tv/Av/M/B/C1–C3)",
+            "r": 6.5,
+            "text": "Av"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 72,
+            "y": 24,
+            "label": "Schulterdisplay",
+            "w": 16,
+            "h": 9
+          },
+          {
+            "id": "iso",
+            "view": "top",
+            "type": "button",
+            "x": 72,
+            "y": 15,
+            "label": "ISO-Taste",
+            "r": 1.8,
+            "text": "ISO"
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 84,
+            "y": 40,
+            "label": "Auslöser",
+            "r": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 76,
+            "y": 42,
+            "label": "Hauptwahlrad",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "ovf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Optischer Sucher",
+            "w": 14,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 40,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 32
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 12,
+            "y": 13,
+            "label": "MENU-Taste",
+            "r": 2.6,
+            "text": "MENU"
+          },
+          {
+            "id": "q",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "Q-Taste (Schnellmenü)",
+            "r": 2.6,
+            "text": "Q"
+          },
+          {
+            "id": "qcd",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 46,
+            "label": "Schnellwahlrad (hinten)",
+            "r": 9
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          },
+          {
+            "id": "lock",
+            "view": "back",
+            "type": "lever",
+            "x": 86,
+            "y": 72,
+            "label": "Sperrschalter LOCK",
+            "w": 8,
+            "h": 3
+          }
+        ]
+      },
+      "level": "experte"
+    },
+    {
+      "id": "canon-r5ii",
+      "brand": "Canon",
+      "model": "EOS R5 Mark II",
+      "alsoApplies": "Canon EOS R5, R3 und R1 (Tasten teils anders angeordnet)",
+      "overview": "Spiegellose Vollformatkamera für Profis. Statt eines Modusrads gibt es eine MODE-Taste und ein Schulterdisplay oben. Gesteuert wird mit dem Hauptwahlrad hinter dem Auslöser, dem großen Schnellwahlrad hinten und dem Steuerring der RF-Objektive.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "A+",
+          "howTo": "MODE-Taste drücken und mit dem Hauptwahlrad A+ wählen."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "MODE-Taste → P. Mit dem Hauptwahlrad verschiebst du die Kombination (Programmverschiebung)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "Av",
+          "howTo": "MODE-Taste → Av. Blende mit dem Hauptwahlrad."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "Tv",
+          "howTo": "MODE-Taste → Tv. Zeit mit dem Hauptwahlrad."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "MODE-Taste → M. Hauptwahlrad = Zeit, Schnellwahlrad hinten = Blende."
+        },
+        {
+          "mode": "bulb",
+          "label": "B",
+          "howTo": "MODE-Taste → B. Mit Fernauslöser oder Bulb-Timer im Menü."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "MODE-Taste oben (neben dem Hauptwahlrad)",
+          "howTo": "MODE drücken und mit dem Hauptwahlrad den Modus wählen; mit INFO wechselst du zwischen Foto- und Videomodi. Der Modus steht im Schulterdisplay.",
+          "elements": [
+            "mode",
+            "lcd",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Hauptwahlrad (Av) bzw. Schnellwahlrad hinten (M)",
+          "howTo": "In Av mit dem Hauptwahlrad, in M mit dem großen Rad hinten. Alternativ den Steuerring am RF-Objektiv belegen.",
+          "elements": [
+            "main-dial",
+            "qcd1"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Hauptwahlrad hinter dem Auslöser",
+          "howTo": "In Tv und M am Hauptwahlrad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "M-Fn-Taste neben dem Auslöser oder Q-Menü",
+          "howTo": "M-Fn drücken, ISO auswählen und mit dem Hauptwahlrad einstellen; „AUTO“ aktiviert Auto-ISO. Viele legen ISO auf den Steuerring des Objektivs.",
+          "elements": [
+            "mfn",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Schnellwahlrad hinten (in P, Av, Tv)",
+          "howTo": "Am großen Rad hinten drehen – die Markierung auf der Belichtungsskala wandert.",
+          "elements": [
+            "qcd1"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "Q-Taste auf der Rückseite",
+          "howTo": "Öffnet die Schnelleinstellung; navigieren per Multicontroller oder Touch.",
+          "elements": [
+            "q"
+          ]
+        }
+      ],
+      "tips": [
+        "Ohne Modusrad: Der aktuelle Modus steht im Schulterdisplay und im Sucher – vor dem Auslösen kurz prüfen.",
+        "Der Steuerring am RF-Objektiv lässt sich mit ISO, Blende oder Belichtungskorrektur belegen.",
+        "Im elektronischen Sucher siehst du die Helligkeit des Fotos schon vor der Aufnahme."
+      ],
+      "kind": "mirrorless",
+      "series": "EOS R (spiegellos, Vollformat)",
+      "layout": {
+        "body": "mirrorless",
+        "elements": [
+          {
+            "id": "power",
+            "view": "top",
+            "type": "lever",
+            "x": 20,
+            "y": 24,
+            "label": "Ein/Aus & Foto/Video",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 82,
+            "y": 40,
+            "label": "Auslöser",
+            "r": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 72,
+            "y": 42,
+            "label": "Hauptwahlrad",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "mfn",
+            "view": "top",
+            "type": "button",
+            "x": 67,
+            "y": 33,
+            "label": "M-Fn-Taste (u. a. ISO)",
+            "r": 2,
+            "text": "M-Fn"
+          },
+          {
+            "id": "evf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Elektronischer Sucher",
+            "w": 16,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 38,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 36
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 14,
+            "y": 13,
+            "label": "MENU-Taste",
+            "r": 2.6,
+            "text": "MENU"
+          },
+          {
+            "id": "q",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 28,
+            "label": "Q-Taste (Schnellmenü)",
+            "r": 2.6,
+            "text": "Q"
+          },
+          {
+            "id": "qcd1",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 45,
+            "label": "Schnellwahlrad 1 (hinten)",
+            "r": 8.5
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          },
+          {
+            "id": "mode",
+            "view": "top",
+            "type": "button",
+            "x": 62,
+            "y": 30,
+            "label": "MODE-Taste",
+            "r": 2.6,
+            "text": "MODE"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 66,
+            "y": 16,
+            "label": "Schulterdisplay",
+            "w": 14,
+            "h": 8
+          }
+        ]
+      },
+      "level": "experte"
+    },
+    {
+      "id": "nikon-d7500",
+      "brand": "Nikon",
+      "model": "D7500",
+      "kind": "dslr",
+      "series": "D (Spiegelreflex)",
+      "alsoApplies": "viele Nikon-Spiegelreflexkameras wie D7200, D750, D780 und D5600/D3500 (Einsteigermodelle mit nur einem Einstellrad)",
+      "overview": "Spiegelreflexkamera mit optischem Sucher und Schulterdisplay. Die Bedienung folgt dem Nikon-Prinzip „Taste halten + Rad drehen“: hinten das Haupteinstellrad, vorne das Subeinstellrad.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "AUTO",
+          "howTo": "Modusrad auf AUTO."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Das Haupteinstellrad verschiebt die Kombination („P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "A",
+          "howTo": "Modusrad auf A. Blende mit dem Subeinstellrad vorne."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "S",
+          "howTo": "Modusrad auf S. Zeit mit dem Haupteinstellrad hinten."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Haupteinstellrad = Zeit, Subeinstellrad = Blende."
+        },
+        {
+          "mode": "bulb",
+          "label": "Bulb / Time",
+          "howTo": "Im Modus M die Zeit über 30 s hinaus drehen: erst „Bulb“, dann „Time“ (Anzeige „- -“)."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben links (mit Entriegelungsknopf)",
+          "howTo": "Knopf drücken und drehen. Darunter sitzt das Rad für die Aufnahmebetriebsart (Einzelbild, Serie …).",
+          "elements": [
+            "mode-dial"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Subeinstellrad (vorne am Griff)",
+          "howTo": "In A und M am vorderen Rad drehen.",
+          "elements": [
+            "sub-dial"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Haupteinstellrad (hinten oben rechts)",
+          "howTo": "In S und M am hinteren Rad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "ISO-Taste oben neben dem Auslöser",
+          "howTo": "ISO-Taste gedrückt halten und am Haupteinstellrad drehen; mit dem Subeinstellrad schaltest du Auto-ISO ein/aus.",
+          "elements": [
+            "iso",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "±-Taste oben neben dem Auslöser",
+          "howTo": "±-Taste gedrückt halten und am Haupteinstellrad drehen.",
+          "elements": [
+            "ec",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "i-Taste auf der Rückseite",
+          "howTo": "Öffnet das i-Menü mit häufig genutzten Einstellungen.",
+          "elements": [
+            "i"
+          ]
+        }
+      ],
+      "tips": [
+        "Im optischen Sucher siehst du die Belichtungsskala, aber nicht die Helligkeit des fertigen Fotos.",
+        "Wie bei allen Nikons: Taste halten und am Rad drehen.",
+        "Time (- -) ist bei sehr langen Belichtungen bequemer als Bulb."
+      ],
+      "layout": {
+        "body": "dslr",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 22,
+            "y": 24,
+            "label": "Modusrad (AUTO/P/S/A/M)",
+            "r": 6.5,
+            "text": "A"
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 84,
+            "y": 40,
+            "label": "Auslöser mit Ein/Aus-Schalter",
+            "r": 3
+          },
+          {
+            "id": "iso",
+            "view": "top",
+            "type": "button",
+            "x": 77,
+            "y": 33,
+            "label": "ISO-Taste",
+            "r": 2,
+            "text": "ISO"
+          },
+          {
+            "id": "ec",
+            "view": "top",
+            "type": "button",
+            "x": 71,
+            "y": 33,
+            "label": "±-Taste",
+            "r": 2,
+            "text": "±"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 72,
+            "y": 22,
+            "label": "Schulterdisplay",
+            "w": 14,
+            "h": 8
+          },
+          {
+            "id": "sub-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 84,
+            "y": 46,
+            "label": "Subeinstellrad (vorne)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 90,
+            "y": 13,
+            "label": "Haupteinstellrad (hinten)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "ovf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Optischer Sucher",
+            "w": 14,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 40,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 32
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 8,
+            "y": 24,
+            "label": "MENU-Taste",
+            "r": 2.4,
+            "text": "MENU"
+          },
+          {
+            "id": "i",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "i-Taste",
+            "r": 2.6,
+            "text": "i"
+          },
+          {
+            "id": "multi",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 46,
+            "label": "Multifunktionswähler",
+            "r": 7.5
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          }
+        ]
+      },
+      "level": "einsteiger"
+    },
+    {
+      "id": "nikon-z6iii",
+      "brand": "Nikon",
+      "model": "Z6 III",
+      "alsoApplies": "viele Nikon-Z- und DSLR-Modelle wie Z6 II, Z7 II, Z5, Z8, D750, D7500 (Einsteigermodelle teils mit nur einem Einstellrad)",
+      "overview": "Nikon verwendet die Bezeichnungen A und S. Gesteuert wird mit dem hinteren Haupteinstellrad und dem vorderen Subeinstellrad. Für ISO und Belichtungskorrektur gibt es eigene Tasten oben auf der Kamera: Taste gedrückt halten und am Rad drehen.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "AUTO",
+          "howTo": "Modusrad auf AUTO. Die Kamera wählt alle Werte."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Das Haupteinstellrad aktiviert die Programmverschiebung (im Display erscheint ein Sternchen „P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "A",
+          "howTo": "Modusrad auf A (Zeitautomatik). Die Blende stellst du mit dem Subeinstellrad (vorne) ein."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "S",
+          "howTo": "Modusrad auf S (Blendenautomatik). Die Zeit stellst du mit dem Haupteinstellrad (hinten) ein."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Haupteinstellrad = Zeit, Subeinstellrad = Blende. Die Belichtungsskala im Sucher zeigt die Abweichung."
+        },
+        {
+          "mode": "bulb",
+          "label": "Bulb / Time",
+          "howTo": "Im Modus M die Zeit mit dem Haupteinstellrad über 30 s hinaus drehen: Zuerst erscheint „Bulb“ (offen solange gedrückt), danach „Time“ (erster Druck öffnet, zweiter schließt)."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben links (mit Entriegelungsknopf)",
+          "howTo": "Knopf drücken und drehen. U1–U3 sind Speicherplätze für eigene Einstellungen. Mit dem Wahlschalter auf der Rückseite wechselst du zwischen Foto und Video.",
+          "elements": [
+            "mode-dial"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Subeinstellrad (vorne am Griff)",
+          "howTo": "In A und M am vorderen Rad drehen.",
+          "elements": [
+            "sub-dial"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Haupteinstellrad (hinten oben rechts)",
+          "howTo": "In S und M am hinteren Rad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "ISO-Taste oben rechts neben dem Auslöser",
+          "howTo": "ISO-Taste gedrückt halten und am Haupteinstellrad drehen. Mit dem Subeinstellrad (bei gedrückter Taste) schaltest du Auto-ISO ein und aus. Grenzen legst du im Fotoaufnahme-Menü unter „ISO-Empfindlichkeits-Einst.“ fest.",
+          "elements": [
+            "iso",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Taste ± oben neben dem Auslöser",
+          "howTo": "±-Taste gedrückt halten und am Haupteinstellrad drehen. Funktioniert in P, A und S – in M nur zusammen mit Auto-ISO.",
+          "elements": [
+            "ec",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "i-Taste auf der Rückseite",
+          "howTo": "Öffnet das i-Menü mit 12 frei belegbaren Funktionen.",
+          "elements": [
+            "i"
+          ]
+        }
+      ],
+      "tips": [
+        "Das Prinzip „Taste halten + Rad drehen“ gilt bei Nikon für viele Funktionen (ISO, ±, Weißabgleich, Bildqualität).",
+        "Unter „Individualfunktionen → Bedienelemente → Einstellräder“ kannst du die Räder tauschen.",
+        "Time ist bei sehr langen Belichtungen bequemer als Bulb, weil du den Auslöser nicht halten musst."
+      ],
+      "kind": "mirrorless",
+      "series": "Z (spiegellos)",
+      "layout": {
+        "body": "mirrorless",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 22,
+            "y": 24,
+            "label": "Modusrad (AUTO/P/S/A/M)",
+            "r": 6.5,
+            "text": "A"
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 84,
+            "y": 40,
+            "label": "Auslöser mit Ein/Aus-Schalter",
+            "r": 3
+          },
+          {
+            "id": "iso",
+            "view": "top",
+            "type": "button",
+            "x": 77,
+            "y": 33,
+            "label": "ISO-Taste",
+            "r": 2,
+            "text": "ISO"
+          },
+          {
+            "id": "ec",
+            "view": "top",
+            "type": "button",
+            "x": 71,
+            "y": 33,
+            "label": "±-Taste",
+            "r": 2,
+            "text": "±"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 74,
+            "y": 22,
+            "label": "Schulterdisplay",
+            "w": 14,
+            "h": 8
+          },
+          {
+            "id": "sub-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 84,
+            "y": 46,
+            "label": "Subeinstellrad (vorne)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 90,
+            "y": 13,
+            "label": "Haupteinstellrad (hinten)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "evf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Elektronischer Sucher",
+            "w": 16,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 38,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 36
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 8,
+            "y": 40,
+            "label": "MENU-Taste",
+            "r": 2.4,
+            "text": "MENU"
+          },
+          {
+            "id": "i",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "i-Taste",
+            "r": 2.6,
+            "text": "i"
+          },
+          {
+            "id": "multi",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 45,
+            "label": "Multifunktionswähler",
+            "r": 7.5
+          },
+          {
+            "id": "photo-video",
+            "view": "back",
+            "type": "lever",
+            "x": 80,
+            "y": 14,
+            "label": "Foto/Video-Wähler",
+            "w": 10,
+            "h": 3
+          }
+        ]
+      },
+      "level": "einsteiger"
+    },
+    {
+      "id": "nikon-d850",
+      "brand": "Nikon",
+      "model": "D850",
+      "kind": "dslr",
+      "series": "D (Spiegelreflex, Vollformat)",
+      "alsoApplies": "große Nikon-Spiegelreflexkameras wie D810, D5, D6 und D500 (ohne Modusrad, mit MODE-Taste)",
+      "overview": "Vollformat-Spiegelreflex für Profis. Wie bei allen Nikons gilt „Taste halten + Rad drehen“ – auch für den Aufnahmemodus: Statt eines Modusrads gibt es eine MODE-Taste. Links oben sitzt das Rad für die Aufnahmebetriebsart.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "–",
+          "howTo": "Die D850 hat keine Vollautomatik. P kommt ihr am nächsten."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "MODE-Taste halten und am Haupteinstellrad P wählen. Haupteinstellrad allein verschiebt die Kombination („P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "A",
+          "howTo": "MODE + Haupteinstellrad → A. Blende mit dem Subeinstellrad vorne."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "S",
+          "howTo": "MODE + Haupteinstellrad → S. Zeit mit dem Haupteinstellrad hinten."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "MODE + Haupteinstellrad → M. Haupteinstellrad = Zeit, Subeinstellrad = Blende."
+        },
+        {
+          "mode": "bulb",
+          "label": "Bulb / Time",
+          "howTo": "Im Modus M die Zeit über 30 s hinaus drehen: erst „Bulb“, dann „Time“ („- -“)."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "MODE-Taste oben",
+          "howTo": "MODE gedrückt halten und am Haupteinstellrad drehen, bis P, S, A oder M im Schulterdisplay steht.",
+          "elements": [
+            "mode",
+            "main-dial",
+            "lcd"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Subeinstellrad (vorne am Griff)",
+          "howTo": "In A und M am vorderen Rad drehen.",
+          "elements": [
+            "sub-dial"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Haupteinstellrad (hinten oben rechts)",
+          "howTo": "In S und M am hinteren Rad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "ISO-Taste oben neben dem Auslöser",
+          "howTo": "ISO-Taste halten und am Haupteinstellrad drehen; mit dem Subeinstellrad Auto-ISO ein/aus.",
+          "elements": [
+            "iso",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "±-Taste oben neben dem Auslöser",
+          "howTo": "±-Taste halten und am Haupteinstellrad drehen.",
+          "elements": [
+            "ec",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "i-Taste auf der Rückseite",
+          "howTo": "Öffnet das i-Menü mit häufig genutzten Einstellungen.",
+          "elements": [
+            "i"
+          ]
+        }
+      ],
+      "tips": [
+        "Keine Vollautomatik: Für Einsteiger ist P mit Auto-ISO der beste Startpunkt.",
+        "Die Tasten oben sind beleuchtbar – praktisch bei Nacht- und Bulb-Aufnahmen.",
+        "Im optischen Sucher siehst du die Belichtungsskala, die Helligkeit aber erst auf dem Foto."
+      ],
+      "layout": {
+        "body": "dslr",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 22,
+            "y": 24,
+            "label": "Rad für Aufnahmebetriebsart (S/CL/CH/Q …)",
+            "r": 6.5,
+            "text": "CL"
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 84,
+            "y": 40,
+            "label": "Auslöser mit Ein/Aus-Schalter",
+            "r": 3
+          },
+          {
+            "id": "iso",
+            "view": "top",
+            "type": "button",
+            "x": 77,
+            "y": 33,
+            "label": "ISO-Taste",
+            "r": 2,
+            "text": "ISO"
+          },
+          {
+            "id": "ec",
+            "view": "top",
+            "type": "button",
+            "x": 71,
+            "y": 33,
+            "label": "±-Taste",
+            "r": 2,
+            "text": "±"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 72,
+            "y": 22,
+            "label": "Schulterdisplay",
+            "w": 14,
+            "h": 8
+          },
+          {
+            "id": "sub-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 84,
+            "y": 46,
+            "label": "Subeinstellrad (vorne)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 90,
+            "y": 13,
+            "label": "Haupteinstellrad (hinten)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "ovf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Optischer Sucher",
+            "w": 14,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 40,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 32
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 8,
+            "y": 24,
+            "label": "MENU-Taste",
+            "r": 2.4,
+            "text": "MENU"
+          },
+          {
+            "id": "i",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "i-Taste",
+            "r": 2.6,
+            "text": "i"
+          },
+          {
+            "id": "multi",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 46,
+            "label": "Multifunktionswähler",
+            "r": 7.5
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          },
+          {
+            "id": "mode",
+            "view": "top",
+            "type": "button",
+            "x": 65,
+            "y": 33,
+            "label": "MODE-Taste",
+            "r": 2.2,
+            "text": "MODE"
+          }
+        ]
+      },
+      "level": "experte"
+    },
+    {
+      "id": "nikon-z8",
+      "brand": "Nikon",
+      "model": "Z8",
+      "alsoApplies": "Nikon Z9 und Z6/Z7-Modelle mit MODE-Taste (Bedienung sehr ähnlich)",
+      "overview": "Spiegellose Profikamera. Wie die großen Nikon-DSLRs ohne Modusrad: Den Aufnahmemodus wählst du mit der MODE-Taste und dem Haupteinstellrad, ansonsten gilt „Taste halten + Rad drehen“.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "–",
+          "howTo": "Keine Vollautomatik. P mit Auto-ISO ist der einfachste Einstieg."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "MODE-Taste halten und am Haupteinstellrad P wählen. Haupteinstellrad allein verschiebt die Kombination („P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "A",
+          "howTo": "MODE + Haupteinstellrad → A. Blende mit dem Subeinstellrad vorne."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "S",
+          "howTo": "MODE + Haupteinstellrad → S. Zeit mit dem Haupteinstellrad."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "MODE + Haupteinstellrad → M. Haupteinstellrad = Zeit, Subeinstellrad = Blende."
+        },
+        {
+          "mode": "bulb",
+          "label": "Bulb / Time",
+          "howTo": "Im Modus M die Zeit über 30 s hinaus drehen: erst „Bulb“, dann „Time“."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "MODE-Taste oben",
+          "howTo": "MODE gedrückt halten und am Haupteinstellrad drehen. Der Modus steht im Schulterdisplay und im Sucher.",
+          "elements": [
+            "mode",
+            "main-dial",
+            "lcd"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Subeinstellrad (vorne am Griff)",
+          "howTo": "In A und M am vorderen Rad drehen.",
+          "elements": [
+            "sub-dial"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Haupteinstellrad (hinten oben rechts)",
+          "howTo": "In S und M am hinteren Rad drehen.",
+          "elements": [
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "ISO-Taste oben neben dem Auslöser",
+          "howTo": "ISO-Taste halten und am Haupteinstellrad drehen; Subeinstellrad schaltet Auto-ISO ein/aus.",
+          "elements": [
+            "iso",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "±-Taste oben neben dem Auslöser",
+          "howTo": "±-Taste halten und am Haupteinstellrad drehen.",
+          "elements": [
+            "ec",
+            "main-dial"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "i-Taste auf der Rückseite",
+          "howTo": "Öffnet das i-Menü mit 12 frei belegbaren Funktionen.",
+          "elements": [
+            "i"
+          ]
+        }
+      ],
+      "tips": [
+        "Kein Modusrad: Vor dem Auslösen kurz den Modus im Sucher prüfen.",
+        "Im elektronischen Sucher siehst du die Helligkeit des Fotos vorab.",
+        "Die Tasten oben sind beleuchtbar – hilfreich bei Nacht."
+      ],
+      "kind": "mirrorless",
+      "series": "Z (spiegellos, Vollformat)",
+      "layout": {
+        "body": "mirrorless",
+        "elements": [
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 84,
+            "y": 40,
+            "label": "Auslöser mit Ein/Aus-Schalter",
+            "r": 3
+          },
+          {
+            "id": "iso",
+            "view": "top",
+            "type": "button",
+            "x": 77,
+            "y": 33,
+            "label": "ISO-Taste",
+            "r": 2,
+            "text": "ISO"
+          },
+          {
+            "id": "ec",
+            "view": "top",
+            "type": "button",
+            "x": 71,
+            "y": 33,
+            "label": "±-Taste",
+            "r": 2,
+            "text": "±"
+          },
+          {
+            "id": "lcd",
+            "view": "top",
+            "type": "screen",
+            "x": 74,
+            "y": 22,
+            "label": "Schulterdisplay",
+            "w": 14,
+            "h": 8
+          },
+          {
+            "id": "sub-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 84,
+            "y": 46,
+            "label": "Subeinstellrad (vorne)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "main-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 90,
+            "y": 13,
+            "label": "Haupteinstellrad (hinten)",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "evf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Elektronischer Sucher",
+            "w": 16,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 38,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 36
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 8,
+            "y": 40,
+            "label": "MENU-Taste",
+            "r": 2.4,
+            "text": "MENU"
+          },
+          {
+            "id": "i",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "i-Taste",
+            "r": 2.6,
+            "text": "i"
+          },
+          {
+            "id": "multi",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 45,
+            "label": "Multifunktionswähler",
+            "r": 7.5
+          },
+          {
+            "id": "photo-video",
+            "view": "back",
+            "type": "lever",
+            "x": 80,
+            "y": 14,
+            "label": "Foto/Video-Wähler",
+            "w": 10,
+            "h": 3
+          },
+          {
+            "id": "mode",
+            "view": "top",
+            "type": "button",
+            "x": 65,
+            "y": 33,
+            "label": "MODE-Taste",
+            "r": 2.2,
+            "text": "MODE"
+          }
+        ]
+      },
+      "level": "experte"
+    },
+    {
+      "id": "sony-a7iv",
+      "brand": "Sony",
+      "model": "Alpha 7 IV",
+      "alsoApplies": "viele aktuelle Sony-Alpha-Modelle wie α7 III, α7C II, α6400/α6700 (teils mit weniger Rädern)",
+      "overview": "Sony-Kameras haben ein Modusrad oben links neben dem Auslöser bzw. oben auf der Kamera, ein vorderes Einstellrad am Griff, ein hinteres Einstellrad oben rechts sowie ein Drehrad (Einstellrad) mit Steuertasten auf der Rückseite. Viele Funktionen erreichst du über die Fn-Taste und das Fn-Menü.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "AUTO",
+          "howTo": "Modusrad auf AUTO (Intelligente Automatik). Die Kamera erkennt die Szene und wählt alle Werte."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Durch Drehen am Einstellrad verschiebst du die Kombination aus Blende und Zeit (Programmverschiebung, im Display „P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "A",
+          "howTo": "Modusrad auf A (Blendenpriorität). Die Blende stellst du standardmäßig mit dem vorderen oder hinteren Einstellrad ein."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "S",
+          "howTo": "Modusrad auf S (Zeitpriorität). Die Verschlusszeit stellst du mit einem der Einstellräder ein."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Blende und Zeit liegen auf vorderem und hinterem Einstellrad; die Belichtungsabweichung zeigt die Anzeige „M.M.“ (Messwert manuell)."
+        },
+        {
+          "mode": "bulb",
+          "label": "BULB",
+          "howTo": "Im Modus M die Verschlusszeit über 30\" hinaus verlängern, bis „BULB“ erscheint. Der Verschluss bleibt offen, solange der Auslöser gedrückt ist – am besten mit Fernauslöser oder der App."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben auf der Kamera (mit Entriegelungsknopf in der Mitte)",
+          "howTo": "Knopf in der Mitte drücken und Rad drehen. Darunter sitzt beim α7 IV ein Wahlschalter für Foto, Video und Zeitlupe/Zeitraffer (S&Q).",
+          "elements": [
+            "mode-dial",
+            "still-movie"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Vorderes Einstellrad (am Griff unter dem Auslöser) bzw. hinteres Einstellrad",
+          "howTo": "In A und M drehen. Welches Rad was steuert, kannst du unter „Benutzerdef. Bedienung → Einstellungen Rad“ anpassen. Bei Objektiven mit Blendenring diesen auf „A“ stellen, sonst steuert der Ring die Blende.",
+          "elements": [
+            "front-dial",
+            "rear-dial"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Hinteres bzw. vorderes Einstellrad",
+          "howTo": "In S und M drehen. Im Modus M liegt die Zeit auf dem jeweils anderen Rad als die Blende.",
+          "elements": [
+            "rear-dial",
+            "front-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "Rechte Seite des Drehrads auf der Rückseite (Beschriftung ISO)",
+          "howTo": "Rechts auf das Drehrad drücken, dann durch Drehen den Wert wählen. Ganz oben in der Liste steht „ISO AUTO“. Unter ISO-Einstellungen legst du Min./Max. und die „ISO AUTO Min. VS“ (längste Zeit vor ISO-Erhöhung) fest.",
+          "elements": [
+            "control-wheel"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Rad oben rechts auf der Kamera",
+          "howTo": "Bei vielen Sony-Modellen ist das Rad mit −3 bis +3 beschriftet. Beim α7 IV ist es unbeschriftet und frei belegbar; es kann der Belichtungskorrektur zugewiesen werden. Alternativ über das Fn-Menü.",
+          "elements": [
+            "ec-dial"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "Fn-Taste auf der Rückseite",
+          "howTo": "Öffnet das Fn-Menü mit den wichtigsten Einstellungen (Fokusmodus, Weißabgleich, Messmethode …). Mit dem Drehrad navigieren, mit dem vorderen Rad Werte ändern.",
+          "elements": [
+            "fn"
+          ]
+        }
+      ],
+      "tips": [
+        "Lege dir unter den Speicherplätzen 1/2/3 auf dem Modusrad eigene Einstellungen ab, z. B. für Sport und Porträt.",
+        "Die Tasten C1–C4 lassen sich frei belegen – z. B. mit ISO oder Fokusfeld.",
+        "Für Bulb-Aufnahmen kannst du die Kamera auch per Smartphone-App oder Kabelfernauslöser auslösen."
+      ],
+      "kind": "mirrorless",
+      "series": "Alpha (spiegellos, Vollformat)",
+      "layout": {
+        "body": "mirrorless",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 64,
+            "y": 24,
+            "label": "Modusrad (P/A/S/M)",
+            "r": 6.5,
+            "text": "M"
+          },
+          {
+            "id": "still-movie",
+            "view": "top",
+            "type": "lever",
+            "x": 64,
+            "y": 33,
+            "label": "Foto/Video/S&Q-Schalter",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 82,
+            "y": 40,
+            "label": "Auslöser mit Ein/Aus-Schalter",
+            "r": 3
+          },
+          {
+            "id": "front-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 82,
+            "y": 46,
+            "label": "Vorderes Einstellrad",
+            "w": 14,
+            "h": 3
+          },
+          {
+            "id": "rear-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 88,
+            "y": 18,
+            "label": "Hinteres Einstellrad",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "ec-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 93,
+            "y": 27,
+            "label": "Rad oben rechts (Belichtungskorrektur)",
+            "r": 4.5
+          },
+          {
+            "id": "c1",
+            "view": "top",
+            "type": "button",
+            "x": 74,
+            "y": 33,
+            "label": "Taste C1",
+            "r": 1.8,
+            "text": "C1"
+          },
+          {
+            "id": "evf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Elektronischer Sucher",
+            "w": 16,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 38,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 36
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 14,
+            "y": 13,
+            "label": "MENU-Taste",
+            "r": 2.6,
+            "text": "MENU"
+          },
+          {
+            "id": "fn",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "Fn-Taste",
+            "r": 2.6,
+            "text": "Fn"
+          },
+          {
+            "id": "control-wheel",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 44,
+            "label": "Drehrad (rechts = ISO)",
+            "r": 8.5,
+            "text": "ISO"
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          }
+        ]
+      },
+      "level": "einsteiger"
+    },
+    {
+      "id": "sony-a7rv",
+      "brand": "Sony",
+      "model": "Alpha 7R V",
+      "alsoApplies": "Sony α7R IV, α1 und α9 III (Bedienung sehr ähnlich)",
+      "overview": "Hochauflösende Profikamera. Die Bedienung entspricht weitgehend dem α7 IV: Modusrad mit Foto/Video-Schalter, vorderes und hinteres Einstellrad, frei belegbares Rad oben rechts (ab Werk Belichtungskorrektur), Drehrad hinten und Fn-Menü.",
+      "modes": [
+        {
+          "mode": "auto",
+          "label": "AUTO",
+          "howTo": "Modusrad auf AUTO (Intelligente Automatik). Die Kamera erkennt die Szene und wählt alle Werte."
+        },
+        {
+          "mode": "program",
+          "label": "P",
+          "howTo": "Modusrad auf P. Durch Drehen am Einstellrad verschiebst du die Kombination aus Blende und Zeit (Programmverschiebung, im Display „P*“)."
+        },
+        {
+          "mode": "aperturePriority",
+          "label": "A",
+          "howTo": "Modusrad auf A (Blendenpriorität). Die Blende stellst du standardmäßig mit dem vorderen oder hinteren Einstellrad ein."
+        },
+        {
+          "mode": "shutterPriority",
+          "label": "S",
+          "howTo": "Modusrad auf S (Zeitpriorität). Die Verschlusszeit stellst du mit einem der Einstellräder ein."
+        },
+        {
+          "mode": "manual",
+          "label": "M",
+          "howTo": "Modusrad auf M. Blende und Zeit liegen auf vorderem und hinterem Einstellrad; die Belichtungsabweichung zeigt die Anzeige „M.M.“ (Messwert manuell)."
+        },
+        {
+          "mode": "bulb",
+          "label": "BULB",
+          "howTo": "Im Modus M die Verschlusszeit über 30\" hinaus verlängern, bis „BULB“ erscheint. Der Verschluss bleibt offen, solange der Auslöser gedrückt ist – am besten mit Fernauslöser oder der App."
+        }
+      ],
+      "controls": [
+        {
+          "setting": "Aufnahmemodus",
+          "location": "Modusrad oben auf der Kamera (mit Entriegelungsknopf in der Mitte)",
+          "howTo": "Knopf in der Mitte drücken und Rad drehen. Darunter sitzt beim α7 IV ein Wahlschalter für Foto, Video und Zeitlupe/Zeitraffer (S&Q).",
+          "elements": [
+            "mode-dial",
+            "still-movie"
+          ]
+        },
+        {
+          "setting": "Blende",
+          "location": "Vorderes Einstellrad (am Griff unter dem Auslöser) bzw. hinteres Einstellrad",
+          "howTo": "In A und M drehen. Welches Rad was steuert, kannst du unter „Benutzerdef. Bedienung → Einstellungen Rad“ anpassen. Bei Objektiven mit Blendenring diesen auf „A“ stellen, sonst steuert der Ring die Blende.",
+          "elements": [
+            "front-dial",
+            "rear-dial"
+          ]
+        },
+        {
+          "setting": "Verschlusszeit",
+          "location": "Hinteres bzw. vorderes Einstellrad",
+          "howTo": "In S und M drehen. Im Modus M liegt die Zeit auf dem jeweils anderen Rad als die Blende.",
+          "elements": [
+            "rear-dial",
+            "front-dial"
+          ]
+        },
+        {
+          "setting": "ISO",
+          "location": "Rechte Seite des Drehrads auf der Rückseite (Beschriftung ISO)",
+          "howTo": "Rechts auf das Drehrad drücken, dann durch Drehen den Wert wählen. Ganz oben in der Liste steht „ISO AUTO“. Unter ISO-Einstellungen legst du Min./Max. und die „ISO AUTO Min. VS“ (längste Zeit vor ISO-Erhöhung) fest.",
+          "elements": [
+            "control-wheel"
+          ]
+        },
+        {
+          "setting": "Belichtungskorrektur",
+          "location": "Rad oben rechts auf der Kamera",
+          "howTo": "Bei vielen Sony-Modellen ist das Rad mit −3 bis +3 beschriftet. Beim α7 IV ist es unbeschriftet und frei belegbar; es kann der Belichtungskorrektur zugewiesen werden. Alternativ über das Fn-Menü.",
+          "elements": [
+            "ec-dial"
+          ]
+        },
+        {
+          "setting": "Schnellmenü",
+          "location": "Fn-Taste auf der Rückseite",
+          "howTo": "Öffnet das Fn-Menü mit den wichtigsten Einstellungen (Fokusmodus, Weißabgleich, Messmethode …). Mit dem Drehrad navigieren, mit dem vorderen Rad Werte ändern.",
+          "elements": [
+            "fn"
+          ]
+        }
+      ],
+      "tips": [
+        "Sony baut keine Spiegelreflexkameras – Einsteiger- und Profimodelle sind alle spiegellos und ähnlich zu bedienen.",
+        "Mit der hohen Auflösung zeigt sich Verwacklung schneller: lieber eine etwas kürzere Zeit wählen.",
+        "Eigene Einstellungen auf den Speicherplätzen 1/2/3 des Modusrads ablegen."
+      ],
+      "kind": "mirrorless",
+      "series": "Alpha (spiegellos, Vollformat)",
+      "layout": {
+        "body": "mirrorless",
+        "elements": [
+          {
+            "id": "mode-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 64,
+            "y": 24,
+            "label": "Modusrad (P/A/S/M)",
+            "r": 6.5,
+            "text": "M"
+          },
+          {
+            "id": "still-movie",
+            "view": "top",
+            "type": "lever",
+            "x": 64,
+            "y": 33,
+            "label": "Foto/Video/S&Q-Schalter",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "shutter",
+            "view": "top",
+            "type": "button",
+            "x": 82,
+            "y": 40,
+            "label": "Auslöser mit Ein/Aus-Schalter",
+            "r": 3
+          },
+          {
+            "id": "front-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 82,
+            "y": 46,
+            "label": "Vorderes Einstellrad",
+            "w": 14,
+            "h": 3
+          },
+          {
+            "id": "rear-dial",
+            "view": "top",
+            "type": "wheel",
+            "x": 88,
+            "y": 18,
+            "label": "Hinteres Einstellrad",
+            "w": 12,
+            "h": 3
+          },
+          {
+            "id": "ec-dial",
+            "view": "top",
+            "type": "dial",
+            "x": 93,
+            "y": 27,
+            "label": "Rad oben rechts (Belichtungskorrektur)",
+            "r": 4.5
+          },
+          {
+            "id": "c1",
+            "view": "top",
+            "type": "button",
+            "x": 74,
+            "y": 33,
+            "label": "Taste C1",
+            "r": 1.8,
+            "text": "C1"
+          },
+          {
+            "id": "evf",
+            "view": "back",
+            "type": "viewfinder",
+            "x": 48,
+            "y": 8,
+            "label": "Elektronischer Sucher",
+            "w": 16,
+            "h": 10
+          },
+          {
+            "id": "screen",
+            "view": "back",
+            "type": "screen",
+            "x": 37,
+            "y": 38,
+            "label": "Klappdisplay",
+            "w": 50,
+            "h": 36
+          },
+          {
+            "id": "menu",
+            "view": "back",
+            "type": "button",
+            "x": 14,
+            "y": 13,
+            "label": "MENU-Taste",
+            "r": 2.6,
+            "text": "MENU"
+          },
+          {
+            "id": "fn",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 30,
+            "label": "Fn-Taste",
+            "r": 2.6,
+            "text": "Fn"
+          },
+          {
+            "id": "control-wheel",
+            "view": "back",
+            "type": "wheel-round",
+            "x": 80,
+            "y": 44,
+            "label": "Drehrad (rechts = ISO)",
+            "r": 8.5,
+            "text": "ISO"
+          },
+          {
+            "id": "af-on",
+            "view": "back",
+            "type": "button",
+            "x": 80,
+            "y": 14,
+            "label": "AF-ON",
+            "r": 2.6,
+            "text": "AF"
+          }
+        ]
+      },
+      "level": "experte"
+    }
+  ],
+  "questions": [
+    {
+      "id": "bl-001",
+      "category": "blende",
+      "difficulty": 1,
+      "text": "Was bestimmt die Blende?",
+      "options": [
+        "Wie groß die Öffnung im Objektiv ist",
+        "Wie lange der Verschluss offen ist",
+        "Wie stark das Sensorsignal verstärkt wird",
+        "Wie viele Bilder pro Sekunde entstehen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Blende ist eine verstellbare Öffnung im Objektiv. Sie regelt, wie viel Licht gleichzeitig durchkommt, und beeinflusst die Schärfentiefe.",
+      "kidExplanation": "Die Blende ist ein Loch im Objektiv, das größer und kleiner werden kann – wie die Pupille in deinem Auge.",
+      "kidText": "Was ist die Blende?"
+    },
+    {
+      "id": "bl-002",
+      "category": "blende",
+      "difficulty": 1,
+      "text": "Welche Blendenzahl steht für die GRÖSSERE Öffnung?",
+      "options": [
+        "f/2",
+        "f/8",
+        "f/16",
+        "f/22"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Blendenzahl ist ein Bruch (Brennweite / Öffnung). Je kleiner die Zahl, desto größer die Öffnung. f/2 ist also deutlich weiter offen als f/16.",
+      "kidExplanation": "Kleine Zahl = großes Loch! Denk an die Pizza: f/2 ist eine halbe Pizza, f/16 nur ein winziges Stück.",
+      "kidText": "Bei welcher Zahl ist das Loch im Objektiv am größten?"
+    },
+    {
+      "id": "bl-003",
+      "category": "blende",
+      "difficulty": 1,
+      "text": "Du möchtest ein Porträt mit verschwommenem Hintergrund. Welche Blende passt am besten?",
+      "options": [
+        "f/1.8",
+        "f/11",
+        "f/16",
+        "f/22"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eine offene Blende (kleine Zahl) erzeugt eine geringe Schärfentiefe: Die Person ist scharf, der Hintergrund verschwimmt (Bokeh).",
+      "kidExplanation": "Mit einem großen Loch (kleine Zahl wie f/1.8) wird nur die Person scharf, und hinten verschwimmt alles schön.",
+      "kidText": "Du willst deinen Freund fotografieren, und hinten soll alles verschwommen sein. Welche Blende nimmst du?"
+    },
+    {
+      "id": "bl-004",
+      "category": "blende",
+      "difficulty": 1,
+      "text": "Du fotografierst eine Landschaft und möchtest von vorne bis hinten alles scharf haben. Welche Blende wählst du?",
+      "options": [
+        "f/11",
+        "f/1.4",
+        "f/2",
+        "f/2.8"
+      ],
+      "correctIndex": 0,
+      "explanation": "Für große Schärfentiefe schließt man die Blende, typischerweise auf f/8 bis f/11. Noch kleinere Öffnungen führen zu Beugungsunschärfe.",
+      "kidExplanation": "Mit einem kleinen Loch (große Zahl wie f/11) wird fast alles scharf – die Blumen vorne und die Berge hinten."
+    },
+    {
+      "id": "bl-005",
+      "category": "blende",
+      "difficulty": 2,
+      "text": "Wie viel Licht kommt bei f/5.6 im Vergleich zu f/4 auf den Sensor?",
+      "options": [
+        "Halb so viel",
+        "Doppelt so viel",
+        "Gleich viel",
+        "Viermal so viel"
+      ],
+      "correctIndex": 0,
+      "explanation": "f/4 → f/5.6 ist eine volle Blendenstufe. Eine Stufe weiter geschlossen halbiert die Lichtmenge.",
+      "kidExplanation": "f/5.6 ist ein kleineres Loch als f/4 – eine Stufe kleiner. Dann kommt nur halb so viel Licht rein."
+    },
+    {
+      "id": "bl-006",
+      "category": "blende",
+      "difficulty": 2,
+      "text": "Welche Reihe zeigt volle Blendenstufen?",
+      "options": [
+        "2.8 – 4 – 5.6 – 8 – 11",
+        "2 – 3 – 4 – 5 – 6",
+        "2.8 – 3.5 – 4 – 4.5 – 5",
+        "4 – 8 – 16 – 32 – 64"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die volle Blendenreihe wächst jeweils mit dem Faktor √2 ≈ 1,4: 1.4 – 2 – 2.8 – 4 – 5.6 – 8 – 11 – 16 – 22. Jeder Schritt halbiert das Licht.",
+      "kidExplanation": "Die Blendenreihe ist eine besondere Zahlenreihe: 2.8, 4, 5.6, 8, 11. Jede Zahl ist ungefähr 1,4-mal so groß wie die davor."
+    },
+    {
+      "id": "bl-007",
+      "category": "blende",
+      "difficulty": 2,
+      "text": "Was ist „Bokeh“?",
+      "options": [
+        "Die Qualität der Unschärfe im Hintergrund",
+        "Ein Bildfehler durch zu hohe ISO",
+        "Eine japanische Kameramarke",
+        "Die Verzeichnung am Bildrand"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bokeh beschreibt, wie schön bzw. weich die unscharfen Bereiche eines Bildes aussehen. Offene Blenden und lichtstarke Objektive erzeugen ein ausgeprägtes Bokeh.",
+      "kidExplanation": "Bokeh ist der schöne, weiche, verschwommene Hintergrund – manchmal mit kleinen Lichtkreisen."
+    },
+    {
+      "id": "bl-008",
+      "category": "blende",
+      "difficulty": 3,
+      "text": "Warum werden Bilder bei f/22 oft wieder etwas unschärfer als bei f/8?",
+      "options": [
+        "Wegen Beugung an der kleinen Blendenöffnung",
+        "Weil der Autofokus nicht mehr funktioniert",
+        "Weil die ISO automatisch steigt",
+        "Weil das Objektiv dann vignettiert"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei sehr kleinen Öffnungen wird das Licht an den Blendenlamellen gebeugt. Diese Beugungsunschärfe reduziert die Gesamtschärfe, obwohl die Schärfentiefe größer wird.",
+      "kidExplanation": "Wenn das Loch winzig ist, wird das Licht am Rand ein bisschen „verbogen“. Dadurch wird das ganze Bild etwas weicher."
+    },
+    {
+      "id": "bl-009",
+      "category": "blende",
+      "difficulty": 2,
+      "text": "Was bedeutet die Angabe „1:1.8“ auf einem Objektiv?",
+      "options": [
+        "Die größtmögliche Blendenöffnung ist f/1.8",
+        "Das Objektiv vergrößert 1,8-fach",
+        "Die kürzeste Verschlusszeit ist 1/1.8 s",
+        "Die Naheinstellgrenze beträgt 1,8 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Angabe 1:x beschreibt die Lichtstärke, also die größte Blendenöffnung. Ein 50 mm 1:1.8 öffnet maximal bis f/1.8.",
+      "kidExplanation": "Die Zahl sagt, wie groß das Loch höchstens werden kann. 1.8 ist ziemlich groß – das Objektiv ist „lichtstark“."
+    },
+    {
+      "id": "bl-010",
+      "category": "blende",
+      "difficulty": 2,
+      "text": "Welcher Faktor verringert die Schärfentiefe – neben einer offenen Blende?",
+      "options": [
+        "Ein geringer Abstand zum Motiv",
+        "Eine kürzere Verschlusszeit",
+        "Eine niedrigere ISO",
+        "Ein Weitwinkelobjektiv"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Schärfentiefe hängt von Blende, Brennweite und Aufnahmeabstand ab. Je näher du am Motiv bist und je länger die Brennweite, desto geringer die Schärfentiefe.",
+      "kidExplanation": "Je näher du an dein Motiv herangehst, desto mehr verschwimmt der Hintergrund."
+    },
+    {
+      "id": "bl-011",
+      "category": "blende",
+      "difficulty": 3,
+      "text": "Bei einem Zoom steht „1:3.5–5.6“. Was heißt das?",
+      "options": [
+        "Bei kurzer Brennweite ist max. f/3.5, bei langer max. f/5.6 möglich",
+        "Man kann nur zwischen f/3.5 und f/5.6 wählen",
+        "Die Blende ist fest auf f/3.5 eingestellt",
+        "Das Zoom deckt 35 bis 56 mm ab"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei vielen Zooms sinkt die maximale Lichtstärke beim Hineinzoomen. Am Weitwinkelende ist f/3.5 möglich, am Teleende nur noch f/5.6. Kleinere Öffnungen (f/8, f/11 …) sind immer möglich.",
+      "kidExplanation": "Wenn du heranzoomst, kann das Loch nicht mehr ganz so groß werden. Vorne geht f/3.5, beim Zoomen nur noch f/5.6."
+    },
+    {
+      "id": "vz-001",
+      "category": "verschlusszeit",
+      "difficulty": 1,
+      "text": "Was regelt die Verschlusszeit?",
+      "options": [
+        "Wie lange Licht auf den Sensor fällt",
+        "Wie groß die Blendenöffnung ist",
+        "Wie stark das Bild verstärkt wird",
+        "Wie scharf der Autofokus arbeitet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Verschlusszeit (Belichtungszeit) bestimmt, wie lange der Verschluss offen ist und der Sensor Licht sammelt.",
+      "kidExplanation": "Die Verschlusszeit sagt, wie lange der kleine Vorhang vor dem Sensor offen bleibt."
+    },
+    {
+      "id": "vz-002",
+      "category": "verschlusszeit",
+      "difficulty": 1,
+      "text": "Welche Verschlusszeit friert einen sprintenden Fußballspieler am besten ein?",
+      "options": [
+        "1/1000 s",
+        "1/30 s",
+        "1/8 s",
+        "1 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Für schnelle Sportbewegungen braucht man sehr kurze Zeiten, etwa 1/1000 s oder kürzer.",
+      "kidExplanation": "1/1000 Sekunde ist superschnell – so schnell, dass der Spieler wie eingefroren aussieht.",
+      "kidText": "Ein Fußballer rennt ganz schnell. Mit welcher Zeit ist er auf dem Foto scharf?"
+    },
+    {
+      "id": "vz-003",
+      "category": "verschlusszeit",
+      "difficulty": 1,
+      "text": "Du willst einen Wasserfall seidig weich darstellen. Was brauchst du?",
+      "options": [
+        "Eine lange Verschlusszeit und ein Stativ",
+        "Eine sehr kurze Verschlusszeit",
+        "Eine hohe ISO",
+        "Eine sehr offene Blende"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lange Zeiten (z. B. 1/2 s bis mehrere Sekunden) lassen fließendes Wasser verwischen. Damit der Rest scharf bleibt, braucht man ein Stativ, bei Tageslicht oft zusätzlich einen Graufilter.",
+      "kidExplanation": "Wenn der Verschluss lange offen bleibt, wird das Wasser weich wie Watte. Die Kamera muss dabei ganz still stehen – auf einem Stativ.",
+      "kidText": "Das Wasser im Wasserfall soll weich wie Watte aussehen. Was brauchst du?"
+    },
+    {
+      "id": "vz-004",
+      "category": "verschlusszeit",
+      "difficulty": 2,
+      "text": "Wie viel Licht bekommt der Sensor bei 1/60 s im Vergleich zu 1/125 s?",
+      "options": [
+        "Etwa doppelt so viel",
+        "Etwa halb so viel",
+        "Gleich viel",
+        "Viermal so viel"
+      ],
+      "correctIndex": 0,
+      "explanation": "1/60 s ist ungefähr doppelt so lang wie 1/125 s – also eine Stufe mehr Licht.",
+      "kidExplanation": "1/60 Sekunde ist ungefähr doppelt so lang wie 1/125 Sekunde. Doppelt so lang offen = doppelt so viel Licht."
+    },
+    {
+      "id": "vz-005",
+      "category": "verschlusszeit",
+      "difficulty": 2,
+      "text": "Nach der Kehrwertregel: Welche Verschlusszeit sollte bei 200 mm Brennweite (Vollformat, ohne Stabilisator) mindestens gewählt werden?",
+      "options": [
+        "1/200 s",
+        "1/50 s",
+        "1/20 s",
+        "1/2 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Kehrwertregel besagt: Zeit ≥ 1/Brennweite. Bei 200 mm also mindestens 1/200 s, um Verwacklungen aus der Hand zu vermeiden.",
+      "kidExplanation": "Die Regel heißt: Teile 1 durch die Zahl auf dem Objektiv. Bei 200 mm also 1/200 Sekunde – sonst wackelt das Bild."
+    },
+    {
+      "id": "vz-006",
+      "category": "verschlusszeit",
+      "difficulty": 2,
+      "text": "Auf dem Display steht „250“. Was bedeutet das?",
+      "options": [
+        "1/250 Sekunde",
+        "250 Sekunden",
+        "Blende f/25",
+        "ISO 250"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kameras zeigen bei Bruchteilen oft nur den Nenner an. „250“ bedeutet 1/250 s. Ganze Sekunden werden meist mit \" markiert, z. B. 2\".",
+      "kidExplanation": "Die Kamera lässt den „1/“-Teil weg. 250 heißt also 1/250 Sekunde – ganz schön kurz!"
+    },
+    {
+      "id": "vz-007",
+      "category": "verschlusszeit",
+      "difficulty": 2,
+      "text": "Wofür hilft ein Bildstabilisator NICHT?",
+      "options": [
+        "Gegen Bewegungsunschärfe eines sich bewegenden Motivs",
+        "Gegen Verwacklung aus der Hand",
+        "Für längere Zeiten bei statischen Motiven",
+        "Für ein ruhigeres Sucherbild bei Tele"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein Stabilisator gleicht die Bewegung der Kamera aus, nicht die des Motivs. Ein rennendes Kind wird bei 1/30 s trotz Stabilisator unscharf.",
+      "kidExplanation": "Der Stabilisator hilft, wenn DEINE Hände wackeln. Wenn aber der Hund rennt, kann er nichts machen."
+    },
+    {
+      "id": "vz-008",
+      "category": "verschlusszeit",
+      "difficulty": 3,
+      "text": "Welches Problem kann der elektronische Verschluss bei schnellen Bewegungen verursachen?",
+      "options": [
+        "Rolling-Shutter-Verzerrungen",
+        "Stärkeres Bildrauschen",
+        "Eine größere Schärfentiefe",
+        "Chromatische Aberration"
+      ],
+      "correctIndex": 0,
+      "explanation": "Der elektronische Verschluss liest den Sensor zeilenweise aus. Bewegt sich das Motiv oder die Kamera schnell, entstehen schräge, verzerrte Formen (Rolling-Shutter-Effekt).",
+      "kidExplanation": "Beim elektronischen Verschluss liest die Kamera das Bild Zeile für Zeile. Wenn sich etwas schnell bewegt, sieht es dann schief aus."
+    },
+    {
+      "id": "vz-009",
+      "category": "verschlusszeit",
+      "difficulty": 2,
+      "text": "Was ist ein „Mitzieher“?",
+      "options": [
+        "Man schwenkt mit dem Motiv bei längerer Zeit – Motiv scharf, Hintergrund verwischt",
+        "Ein Foto mit sehr hoher ISO",
+        "Mehrere Bilder in Serie",
+        "Ein Foto mit Blitz auf den zweiten Verschlussvorhang"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei einem Mitzieher verfolgst du ein bewegtes Motiv mit der Kamera, typischerweise bei 1/30–1/60 s. Das Motiv bleibt relativ scharf, der Hintergrund zieht Streifen und vermittelt Geschwindigkeit.",
+      "kidExplanation": "Du drehst die Kamera mit dem Radfahrer mit. Dann ist der Radfahrer scharf und hinten wird alles zu Streifen – das sieht richtig schnell aus!"
+    },
+    {
+      "id": "vz-010",
+      "category": "verschlusszeit",
+      "difficulty": 1,
+      "text": "Was passiert, wenn du aus der Hand bei wenig Licht 1/4 s belichtest?",
+      "options": [
+        "Das Bild wird wahrscheinlich verwackelt",
+        "Das Bild wird zu dunkel",
+        "Das Bild rauscht stark",
+        "Der Hintergrund wird unscharf"
+      ],
+      "correctIndex": 0,
+      "explanation": "1/4 s ist für die meisten Brennweiten viel zu lang für freihändige Aufnahmen. Selbst mit Stabilisator ist das Risiko von Verwacklungen hoch.",
+      "kidExplanation": "1/4 Sekunde ist ganz schön lang. So ruhig kann man die Kamera kaum halten – das Bild verwackelt."
+    },
+    {
+      "id": "iso-001",
+      "category": "iso",
+      "difficulty": 1,
+      "text": "Was passiert, wenn du die ISO erhöhst?",
+      "options": [
+        "Das Bild wird heller, aber es rauscht mehr",
+        "Das Bild wird dunkler und schärfer",
+        "Die Schärfentiefe wird größer",
+        "Die Verschlusszeit wird automatisch länger"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eine höhere ISO verstärkt das Sensorsignal. Das Bild wird heller, gleichzeitig nehmen Rauschen zu und Dynamikumfang ab.",
+      "kidExplanation": "Höhere ISO ist wie lauter drehen: Das Bild wird heller, bekommt aber kleine Krümel."
+    },
+    {
+      "id": "iso-002",
+      "category": "iso",
+      "difficulty": 1,
+      "text": "Welche ISO liefert in der Regel die beste Bildqualität?",
+      "options": [
+        "Die Basis-ISO, z. B. ISO 100",
+        "ISO 3200",
+        "ISO 12800",
+        "Die höchste ISO der Kamera"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei der Basis-ISO (meist 100) wird das Signal nicht oder kaum verstärkt. Das ergibt das geringste Rauschen und den größten Dynamikumfang.",
+      "kidExplanation": "ISO 100 ist ganz „leise“ – da gibt es fast keine Krümel. Das Bild ist am schönsten."
+    },
+    {
+      "id": "iso-003",
+      "category": "iso",
+      "difficulty": 1,
+      "text": "Wie nennt man die körnigen, teils bunten Störungen bei hoher ISO?",
+      "options": [
+        "Bildrauschen",
+        "Vignettierung",
+        "Bokeh",
+        "Moiré"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bildrauschen entsteht durch die Verstärkung des Signals. Es zeigt sich als Helligkeits- und Farbrauschen.",
+      "kidExplanation": "Die kleinen Krümel im Bild heißen Rauschen."
+    },
+    {
+      "id": "iso-004",
+      "category": "iso",
+      "difficulty": 2,
+      "text": "Du verdoppelst die ISO von 400 auf 800. Wie viel heller wird das Bild?",
+      "options": [
+        "Eine Stufe",
+        "Zwei Stufen",
+        "Eine halbe Stufe",
+        "Gar nicht"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jede Verdopplung der ISO entspricht einer Lichtwertstufe.",
+      "kidExplanation": "Doppelte ISO = doppelt so hell = eine Stufe."
+    },
+    {
+      "id": "iso-005",
+      "category": "iso",
+      "difficulty": 2,
+      "text": "In welchen Modi kann Auto-ISO verwendet werden?",
+      "options": [
+        "In P, A/Av, S/Tv und auch in M",
+        "Nur in der Vollautomatik",
+        "Nur im Modus M",
+        "Nur im Bulb-Modus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Auto-ISO ist in fast allen Belichtungsmodi möglich. Besonders beliebt ist M mit Auto-ISO: Du wählst Blende und Zeit, die Kamera regelt die Helligkeit über die ISO.",
+      "kidExplanation": "Die Kamera kann die ISO in fast jedem Modus selbst aussuchen – sogar in M."
+    },
+    {
+      "id": "iso-006",
+      "category": "iso",
+      "difficulty": 2,
+      "text": "Was ist meist die bessere Wahl in einem dunklen Raum ohne Stativ?",
+      "options": [
+        "Höhere ISO wählen, um eine verwacklungsfreie Zeit zu erreichen",
+        "ISO 100 lassen und 1/4 s belichten",
+        "ISO 100 lassen und später stark aufhellen",
+        "Die Blende schließen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein leicht rauschendes, aber scharfes Bild ist besser als ein verwackeltes. Starkes nachträgliches Aufhellen erzeugt oft sogar mehr Rauschen als eine passend höhere ISO.",
+      "kidExplanation": "Lieber ein paar Krümel als ein verwackeltes Bild! Dreh die ISO hoch."
+    },
+    {
+      "id": "iso-007",
+      "category": "iso",
+      "difficulty": 3,
+      "text": "Was verschlechtert sich neben dem Rauschen bei hohen ISO-Werten?",
+      "options": [
+        "Der Dynamikumfang",
+        "Die Schärfentiefe",
+        "Die Brennweite",
+        "Die Serienbildrate"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei hohen ISO-Werten sinkt der Dynamikumfang: Die Kamera kann helle und dunkle Bereiche gleichzeitig schlechter abbilden, Lichter fressen schneller aus.",
+      "kidExplanation": "Bei hoher ISO kann die Kamera sehr helle und sehr dunkle Stellen nicht mehr so gut gleichzeitig zeigen."
+    },
+    {
+      "id": "iso-008",
+      "category": "iso",
+      "difficulty": 2,
+      "text": "Welche Einstellung legst du bei Auto-ISO zusätzlich häufig fest?",
+      "options": [
+        "Eine Obergrenze und eine längste Verschlusszeit",
+        "Die Brennweite",
+        "Den Weißabgleich",
+        "Das Bildformat"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Auto-ISO kannst du meist die maximale ISO und eine Mindest-Verschlusszeit festlegen, ab der die Kamera die ISO erhöht.",
+      "kidExplanation": "Du kannst der Kamera sagen: „Dreh die ISO nicht höher als …“ und „Werde nicht langsamer als …“."
+    },
+    {
+      "id": "bel-001",
+      "category": "belichtung",
+      "difficulty": 1,
+      "text": "Welche drei Einstellungen bilden das Belichtungsdreieck?",
+      "options": [
+        "Blende, Verschlusszeit und ISO",
+        "Blende, Brennweite und Fokus",
+        "ISO, Weißabgleich und Kontrast",
+        "Verschlusszeit, Blitz und Zoom"
+      ],
+      "correctIndex": 0,
+      "explanation": "Blende, Verschlusszeit und ISO bestimmen gemeinsam die Helligkeit eines Fotos.",
+      "kidExplanation": "Die drei Knöpfe für die Helligkeit: Blende, Verschlusszeit und ISO."
+    },
+    {
+      "id": "bel-002",
+      "category": "belichtung",
+      "difficulty": 1,
+      "text": "Was bedeutet eine „Stufe“ (EV) in der Fotografie?",
+      "options": [
+        "Doppelte oder halbe Lichtmenge",
+        "Zehn Prozent mehr Licht",
+        "Eine Blendenzahl mehr",
+        "Eine Sekunde längere Belichtung"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eine Lichtwertstufe entspricht immer einer Verdopplung oder Halbierung der Lichtmenge – egal ob über Blende, Zeit oder ISO.",
+      "kidExplanation": "Eine Stufe heißt: doppelt so viel Licht oder halb so viel."
+    },
+    {
+      "id": "bel-003",
+      "category": "belichtung",
+      "difficulty": 2,
+      "text": "f/8, 1/125 s, ISO 100 ist korrekt belichtet. Welche Kombination ist gleich hell?",
+      "options": [
+        "f/5.6, 1/250 s, ISO 100",
+        "f/5.6, 1/60 s, ISO 100",
+        "f/11, 1/250 s, ISO 100",
+        "f/8, 1/250 s, ISO 100"
+      ],
+      "correctIndex": 0,
+      "explanation": "f/8 → f/5.6 ist +1 Stufe, 1/125 → 1/250 s ist −1 Stufe. Zusammen 0 – die Helligkeit bleibt gleich.",
+      "kidExplanation": "Das Loch wird eine Stufe größer (mehr Licht), dafür ist der Verschluss eine Stufe kürzer offen (weniger Licht). Das gleicht sich aus!"
+    },
+    {
+      "id": "bel-004",
+      "category": "belichtung",
+      "difficulty": 3,
+      "text": "Du hast f/8, 1/125 s, ISO 400 und willst 1/1000 s für Sport. Die Blende bleibt f/8. Welche ISO brauchst du für gleiche Helligkeit?",
+      "options": [
+        "ISO 3200",
+        "ISO 800",
+        "ISO 1600",
+        "ISO 6400"
+      ],
+      "correctIndex": 0,
+      "explanation": "1/125 → 1/1000 s sind drei Stufen weniger Licht (125 → 250 → 500 → 1000). Ausgleich über drei ISO-Stufen: 400 → 800 → 1600 → 3200.",
+      "kidExplanation": "Drei Stufen schneller heißt drei Stufen weniger Licht. Also ISO dreimal verdoppeln: 400, 800, 1600, 3200."
+    },
+    {
+      "id": "bel-005",
+      "category": "belichtung",
+      "difficulty": 2,
+      "text": "Was besagt die Sonnige-16-Regel?",
+      "options": [
+        "Bei Sonne: f/16 und Verschlusszeit 1/ISO",
+        "Bei Sonne immer ISO 1600 verwenden",
+        "Bei Sonne 16 Bilder pro Sekunde",
+        "Bei Sonne Blende f/1.6 und 1/16 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ohne Belichtungsmesser: Bei klarer Sonne ergibt f/16 mit 1/ISO s (bei ISO 100 ≈ 1/125 s) eine korrekte Belichtung.",
+      "kidExplanation": "An sonnigen Tagen: Blende f/16 und die Zeit 1 geteilt durch die ISO. Bei ISO 100 also 1/100 Sekunde."
+    },
+    {
+      "id": "bel-006",
+      "category": "belichtung",
+      "difficulty": 2,
+      "text": "Der Belichtungsmesser zeigt −2. Was bedeutet das?",
+      "options": [
+        "Das Bild wird zwei Stufen zu dunkel",
+        "Das Bild wird zwei Stufen zu hell",
+        "Die Blende ist um 2 geschlossen",
+        "Die Kamera ist 2 Grad schief"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein negativer Wert auf der Belichtungsskala bedeutet Unterbelichtung, hier um zwei Stufen.",
+      "kidExplanation": "Minus heißt zu dunkel. −2 heißt: ganz schön zu dunkel."
+    },
+    {
+      "id": "bel-007",
+      "category": "belichtung",
+      "difficulty": 2,
+      "text": "Warum werden Schneefotos oft zu dunkel?",
+      "options": [
+        "Der Belichtungsmesser geht von einer mittelgrauen Szene aus",
+        "Schnee reflektiert kein Licht",
+        "Die ISO ist im Winter automatisch niedriger",
+        "Der Autofokus arbeitet bei Kälte schlechter"
+      ],
+      "correctIndex": 0,
+      "explanation": "Belichtungsmesser rechnen mit mittelgrau (ca. 18 % Reflexion). Eine sehr helle Szene wird daher abgedunkelt. Lösung: Belichtungskorrektur +1 bis +2.",
+      "kidExplanation": "Die Kamera denkt, alles sei grau. Darum macht sie den weißen Schnee grau. Stell den ±-Knopf auf Plus!"
+    },
+    {
+      "id": "bel-008",
+      "category": "belichtung",
+      "difficulty": 2,
+      "text": "In welchen Modi wirkt die Belichtungskorrektur direkt?",
+      "options": [
+        "P, A/Av und S/Tv",
+        "Nur im Modus M ohne Auto-ISO",
+        "Nur im Bulb-Modus",
+        "Gar nicht, sie ist nur für Videos"
+      ],
+      "correctIndex": 0,
+      "explanation": "In den (Halb-)Automatiken verändert die Belichtungskorrektur das Ziel der Automatik. In M wirkt sie in der Regel nur in Kombination mit Auto-ISO.",
+      "kidExplanation": "Der ±-Knopf funktioniert, wenn die Kamera mithilft: in P, A und S."
+    },
+    {
+      "id": "bel-009",
+      "category": "belichtung",
+      "difficulty": 3,
+      "text": "Welche Messmethode eignet sich am besten für einen angestrahlten Sänger auf dunkler Bühne?",
+      "options": [
+        "Spotmessung",
+        "Mehrfeldmessung",
+        "Mittenbetonte Messung über das ganze Bild",
+        "Gar keine Messung, nur Vollautomatik"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Spotmessung misst nur einen kleinen Bereich. So wird der helle Sänger richtig belichtet, statt dass die dunkle Bühne das Ergebnis verfälscht.",
+      "kidExplanation": "Bei der Spotmessung schaut die Kamera nur auf einen kleinen Punkt – genau auf den Sänger."
+    },
+    {
+      "id": "bel-010",
+      "category": "belichtung",
+      "difficulty": 2,
+      "text": "Was zeigt ein Histogramm?",
+      "options": [
+        "Die Verteilung der Helligkeiten im Bild",
+        "Die Schärfe im Bild",
+        "Die Farbtemperatur",
+        "Die Akkulaufzeit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Das Histogramm zeigt, wie viele Pixel welche Helligkeit haben: links Schatten, rechts Lichter. Stößt es rechts an, sind Lichter ausgefressen.",
+      "kidExplanation": "Das Histogramm ist ein kleiner Berg: Links sind die dunklen Stellen, rechts die hellen."
+    },
+    {
+      "id": "bel-011",
+      "category": "belichtung",
+      "difficulty": 3,
+      "text": "Du hast f/4, 1/500 s, ISO 200. Du stellst auf f/8 um. Welche Zeit ergibt bei ISO 200 dieselbe Helligkeit?",
+      "options": [
+        "1/125 s",
+        "1/1000 s",
+        "1/250 s",
+        "1/60 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "f/4 → f/8 sind zwei Stufen weniger Licht (4 → 5.6 → 8). Ausgleich: Zeit zwei Stufen länger (1/500 → 1/250 → 1/125 s).",
+      "kidExplanation": "Das Loch wird zwei Stufen kleiner. Dann muss der Verschluss zwei Stufen länger offen bleiben: 1/500, 1/250, 1/125."
+    },
+    {
+      "id": "bel-012",
+      "category": "belichtung",
+      "difficulty": 1,
+      "text": "Was passiert, wenn ein Bild stark überbelichtet ist?",
+      "options": [
+        "Helle Bereiche werden rein weiß und verlieren Zeichnung",
+        "Das Bild wird unscharf",
+        "Die Farben werden kräftiger",
+        "Das Bild wird kleiner gespeichert"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Überbelichtung „fressen“ helle Bereiche aus: Sie werden reinweiß ohne Details, die sich meist nicht zurückholen lassen.",
+      "kidExplanation": "Zu viel Licht – dann wird alles ganz weiß, und man sieht keine Einzelheiten mehr."
+    },
+    {
+      "id": "bel-013",
+      "category": "belichtung",
+      "difficulty": 3,
+      "text": "Welcher Lichtwert (EV bei ISO 100) beschreibt ungefähr einen sonnigen Tag?",
+      "options": [
+        "EV 15",
+        "EV 5",
+        "EV 0",
+        "EV −3"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein sonniger Tag liegt bei etwa EV 15 (z. B. f/16 bei 1/125 s). Ein heller Innenraum hat etwa EV 7, eine nächtliche Straße etwa EV 2.",
+      "kidExplanation": "Je heller es ist, desto größer der EV-Wert. Ein Sonnentag ist sehr hell: ungefähr 15."
+    },
+    {
+      "id": "mod-001",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Was stellst du bei der Zeitautomatik (A/Av) selbst ein?",
+      "options": [
+        "Die Blende",
+        "Die Verschlusszeit",
+        "Nichts",
+        "Nur den Blitz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei der Zeitautomatik wählst du die Blende, die Kamera automatisiert die Verschlusszeit. Der Name beschreibt, was die Kamera macht.",
+      "kidExplanation": "Zeitautomatik heißt: Die ZEIT macht die Kamera automatisch. Du stellst die Blende ein."
+    },
+    {
+      "id": "mod-002",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Was stellst du bei der Blendenautomatik (S/Tv) selbst ein?",
+      "options": [
+        "Die Verschlusszeit",
+        "Die Blende",
+        "Nichts",
+        "Nur die ISO"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei der Blendenautomatik wählst du die Verschlusszeit, die Kamera die passende Blende.",
+      "kidExplanation": "Blendenautomatik heißt: Die BLENDE macht die Kamera. Du stellst die Zeit ein."
+    },
+    {
+      "id": "mod-003",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Wie heißt die Zeitautomatik auf dem Modusrad einer Canon-Kamera?",
+      "options": [
+        "Av",
+        "A",
+        "Tv",
+        "S"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canon verwendet Av (Aperture value) für die Zeitautomatik und Tv (Time value) für die Blendenautomatik. Andere Hersteller nutzen A und S.",
+      "kidExplanation": "Bei Canon steht Av auf dem Rad – das v kommt von „value“, Englisch für Wert."
+    },
+    {
+      "id": "mod-004",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Welcher Modus eignet sich am besten, um einen Hund im Sprung scharf einzufrieren, wenn sich das Licht ständig ändert?",
+      "options": [
+        "Blendenautomatik (S/Tv) mit kurzer Zeit",
+        "Zeitautomatik (A/Av) mit f/16",
+        "Bulb",
+        "Manuell mit 1/15 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Bewegung ist die Zeit entscheidend. In S/Tv legst du z. B. 1/1000 s fest, die Kamera passt die Blende an wechselndes Licht an.",
+      "kidExplanation": "Du stellst eine superschnelle Zeit ein, und die Kamera kümmert sich um den Rest. Das geht im Modus S oder Tv.",
+      "kidText": "Ein Hund springt durch die Luft. Welcher Modus hilft dir, ihn scharf zu fotografieren?"
+    },
+    {
+      "id": "mod-005",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Welcher Modus eignet sich für ein Porträt mit unscharfem Hintergrund?",
+      "options": [
+        "Zeitautomatik (A/Av) mit offener Blende",
+        "Blendenautomatik (S/Tv) mit 1/4000 s",
+        "Bulb",
+        "Vollautomatik"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Schärfentiefe wird über die Blende gesteuert. In A/Av wählst du direkt eine offene Blende wie f/2.",
+      "kidExplanation": "Im Modus A bestimmst du das Loch. Ein großes Loch macht den Hintergrund schön verschwommen."
+    },
+    {
+      "id": "mod-006",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Im Modus M …",
+      "options": [
+        "… stellst du Blende und Zeit selbst ein, die Kamera korrigiert nicht",
+        "… wählt die Kamera alles automatisch",
+        "… wählt die Kamera nur die Blende",
+        "… ist nur Video möglich"
+      ],
+      "correctIndex": 0,
+      "explanation": "Im manuellen Modus bestimmst du Blende und Zeit (und bei fester ISO auch die ISO). Der Belichtungsmesser zeigt die Abweichung nur an.",
+      "kidExplanation": "M heißt manuell: Du machst alles selbst, die Kamera hilft nicht."
+    },
+    {
+      "id": "mod-007",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Was passiert im Bulb-Modus?",
+      "options": [
+        "Der Verschluss bleibt offen, solange der Auslöser gedrückt ist",
+        "Die Kamera macht eine Serie von Bildern",
+        "Der Blitz wird automatisch ausgelöst",
+        "Die Kamera wählt die längste mögliche Zeit von 30 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bulb ermöglicht beliebig lange Belichtungszeiten: Der Verschluss öffnet beim Drücken und schließt beim Loslassen.",
+      "kidExplanation": "Solange du den Knopf drückst, bleibt die Kamera offen. Lässt du los, ist das Foto fertig."
+    },
+    {
+      "id": "mod-008",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Was ist die Programmverschiebung im Modus P?",
+      "options": [
+        "Die Kamera tauscht Blende und Zeit gegeneinander, die Helligkeit bleibt gleich",
+        "Die Kamera erhöht die ISO",
+        "Das Bild wird heller oder dunkler",
+        "Der Modus wechselt automatisch zu M"
+      ],
+      "correctIndex": 0,
+      "explanation": "Durch Drehen am Einstellrad wählt die Kamera eine andere, gleich helle Kombination, z. B. f/4 – 1/500 s statt f/5.6 – 1/250 s.",
+      "kidExplanation": "Du drehst am Rad, und die Kamera tauscht: größeres Loch, dafür kürzere Zeit. Das Foto bleibt gleich hell."
+    },
+    {
+      "id": "mod-009",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Was unterscheidet P von der Vollautomatik?",
+      "options": [
+        "In P kannst du u. a. ISO, Belichtungskorrektur und Weißabgleich selbst bestimmen",
+        "In P wählst du die Blende selbst",
+        "P ist nur für Videos",
+        "Es gibt keinen Unterschied"
+      ],
+      "correctIndex": 0,
+      "explanation": "In beiden Modi wählt die Kamera Blende und Zeit. In P bleiben aber Eingriffe wie ISO, Belichtungskorrektur, Weißabgleich, Blitz und Programmverschiebung möglich.",
+      "kidExplanation": "In P hilft dir die Kamera, aber du darfst mitbestimmen. In AUTO bestimmt sie alles allein."
+    },
+    {
+      "id": "mod-010",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Im Modus A/Av wählst du f/1.4 bei strahlender Sonne. Die Zeit blinkt. Warum?",
+      "options": [
+        "Die kürzeste Zeit reicht nicht – das Bild wird überbelichtet",
+        "Der Akku ist leer",
+        "Das Bild wird unterbelichtet",
+        "Der Autofokus hat nichts gefunden"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei sehr offener Blende und viel Licht wäre eine Zeit kürzer als die kürzeste mögliche nötig. Abhilfe: Blende schließen, ISO senken, elektronischen Verschluss oder Graufilter nutzen.",
+      "kidExplanation": "Es ist zu hell! Die Kamera kann den Verschluss nicht noch schneller machen. Mach das Loch kleiner."
+    },
+    {
+      "id": "mod-011",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Welcher Modus ist ideal, wenn bei einer Panoramaserie alle Bilder exakt gleich belichtet sein sollen?",
+      "options": [
+        "Manuell (M)",
+        "Programmautomatik (P)",
+        "Vollautomatik",
+        "Zeitautomatik mit Belichtungskorrektur"
+      ],
+      "correctIndex": 0,
+      "explanation": "In M ändern sich die Werte nicht von Bild zu Bild. Automatiken würden jedes Einzelbild neu messen, was zu Helligkeitssprüngen im Panorama führt.",
+      "kidExplanation": "Im Modus M bleiben alle Einstellungen gleich – so passen die Bilder perfekt zusammen."
+    },
+    {
+      "id": "mod-012",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Was stellst du im Bulb-Modus selbst ein?",
+      "options": [
+        "Blende und ISO – die Dauer bestimmst du durch den Auslöser",
+        "Nur die ISO",
+        "Gar nichts",
+        "Nur die Verschlusszeit über das Menü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bulb arbeitet wie M: Blende und ISO stellst du selbst ein, die Belichtungsdauer bestimmst du durch Drücken und Loslassen des Auslösers bzw. Fernauslösers.",
+      "kidExplanation": "Du stellst das Loch und die ISO ein. Wie lange es dauert, bestimmst du mit dem Knopf."
+    },
+    {
+      "id": "mod-013",
+      "category": "modi",
+      "difficulty": 3,
+      "text": "Welche Funktion bieten Nikon-Kameras zusätzlich zu Bulb?",
+      "options": [
+        "Time (T): erster Druck öffnet, zweiter schließt",
+        "Turbo: doppelte Serienbildrate",
+        "Twilight: automatische Nachtszene",
+        "Tv: Blendenautomatik"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei „Time“ öffnet ein Druck den Verschluss und ein zweiter schließt ihn – praktisch für sehr lange Belichtungen ohne den Auslöser festzuhalten.",
+      "kidExplanation": "Bei Time drückst du einmal zum Starten und noch einmal zum Stoppen – wie bei einer Stoppuhr."
+    },
+    {
+      "id": "mod-014",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Woher kommt der Name „Bulb“?",
+      "options": [
+        "Von einem Gummiball, mit dem früher der Verschluss pneumatisch ausgelöst wurde",
+        "Von der Glühbirne (englisch bulb) im Blitz",
+        "Vom Erfinder Mr. Bulb",
+        "Von „bulky“ – sperrig"
+      ],
+      "correctIndex": 0,
+      "explanation": "Früher hielt man einen Gummiball gedrückt, der den Verschluss pneumatisch offen hielt. Auf Englisch heißt dieser Ball „bulb“.",
+      "kidExplanation": "Früher hatte man einen Gummiball an der Kamera. Solange man ihn drückte, war sie offen. Ball heißt auf Englisch „bulb“."
+    },
+    {
+      "id": "mod-015",
+      "category": "modi",
+      "difficulty": 3,
+      "text": "Im Modus M mit Auto-ISO: Was regelt die Kamera?",
+      "options": [
+        "Die ISO, damit die Belichtung stimmt",
+        "Blende und Zeit",
+        "Nur die Blende",
+        "Gar nichts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Du legst Blende und Zeit fest, die Kamera passt die ISO an. So behältst du die gestalterische Kontrolle und bekommst trotzdem korrekt belichtete Bilder.",
+      "kidExplanation": "Du stellst Loch und Zeit ein, und die Kamera dreht nur die ISO hoch oder runter."
+    },
+    {
+      "id": "mod-016",
+      "category": "modi",
+      "difficulty": 2,
+      "text": "Was brauchst du für eine Bulb-Belichtung von 5 Minuten unbedingt?",
+      "options": [
+        "Ein Stativ und am besten einen Fernauslöser",
+        "Einen Blitz",
+        "Eine hohe ISO",
+        "Ein Weitwinkelobjektiv"
+      ],
+      "correctIndex": 0,
+      "explanation": "Jede Bewegung der Kamera würde das Bild verwischen. Ein Stativ hält die Kamera still, ein Fernauslöser verhindert Erschütterungen beim Drücken.",
+      "kidExplanation": "Die Kamera muss ganz lange still stehen. Dafür brauchst du ein Stativ und einen Fernauslöser."
+    },
+    {
+      "id": "mod-017",
+      "category": "modi",
+      "difficulty": 1,
+      "text": "Wie heißt die Blendenautomatik bei Canon?",
+      "options": [
+        "Tv",
+        "Av",
+        "S",
+        "B"
+      ],
+      "correctIndex": 0,
+      "explanation": "Canon nennt die Blendenautomatik Tv (Time value). Bei Nikon und Sony heißt sie S (Shutter).",
+      "kidExplanation": "Bei Canon steht Tv auf dem Rad. T wie „Time“, Englisch für Zeit – die stellst du ein."
+    },
+    {
+      "id": "mod-018",
+      "category": "modi",
+      "difficulty": 3,
+      "text": "Du fotografierst im Modus S/Tv mit 1/1000 s in einer dunklen Halle. Die Blende blinkt. Was ist die beste Lösung?",
+      "options": [
+        "ISO erhöhen oder Auto-ISO aktivieren",
+        "Belichtungskorrektur auf −2",
+        "Blende manuell schließen",
+        "Bulb-Modus nutzen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Kamera hat die Blende bereits voll geöffnet und das Licht reicht trotzdem nicht. Mehr Helligkeit kommt nur noch über ISO oder eine längere Zeit.",
+      "kidExplanation": "Das Loch ist schon ganz groß, und es ist immer noch zu dunkel. Dreh die ISO hoch!"
+    },
+    {
+      "id": "kam-001",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Sony: Wie heißt auf dem Modusrad die Zeitautomatik?",
+      "options": [
+        "A",
+        "Av",
+        "Tv",
+        "S"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sony bezeichnet die Zeitautomatik (Blendenpriorität) mit A, die Blendenautomatik (Zeitpriorität) mit S.",
+      "kidExplanation": "Bei Sony steht A auf dem Rad – A wie Aperture, das englische Wort für Blende.",
+      "brand": "Sony"
+    },
+    {
+      "id": "kam-002",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Sony α7 IV: Wie stellst du standardmäßig die ISO ein?",
+      "options": [
+        "Rechts auf das hintere Drehrad drücken (ISO) und drehen",
+        "Über das Modusrad",
+        "Mit dem Objektiv-Fokusring",
+        "Nur über das Hauptmenü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die rechte Seite des Drehrads auf der Rückseite ist bei vielen Sony-Modellen mit ISO beschriftet. Drücken, dann durch Drehen den Wert wählen.",
+      "kidExplanation": "Auf der Rückseite gibt es ein Rad. Drück rechts drauf, wo ISO steht, und dreh dann.",
+      "brand": "Sony",
+      "cameras": [
+        "sony-a7iv"
+      ]
+    },
+    {
+      "id": "kam-003",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Sony: Wie gelangst du zu BULB?",
+      "options": [
+        "Im Modus M die Zeit über 30\" hinaus verlängern",
+        "Modusrad auf B",
+        "Im Modus A die Blende ganz schließen",
+        "Über die Taste C1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sony hat keine eigene B-Position auf dem Modusrad. Im Modus M verlängerst du die Zeit über 30 s hinaus, bis „BULB“ erscheint.",
+      "kidExplanation": "Stell M ein und dreh die Zeit immer länger, bis BULB erscheint.",
+      "brand": "Sony"
+    },
+    {
+      "id": "kam-004",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Sony: Welche Taste öffnet das Schnellmenü mit den wichtigsten Einstellungen?",
+      "options": [
+        "Fn",
+        "Q",
+        "i",
+        "M-Fn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Sony heißt das Schnellmenü Fn-Menü und wird über die Fn-Taste geöffnet. Q ist bei Canon üblich, i bei Nikon.",
+      "kidExplanation": "Bei Sony heißt der Knopf Fn.",
+      "brand": "Sony"
+    },
+    {
+      "id": "kam-005",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Canon: Wo stellst du im Modus Av die Blende ein?",
+      "options": [
+        "Am Hauptwahlrad hinter dem Auslöser",
+        "Am Modusrad",
+        "Am Fokusring des Objektivs",
+        "Mit der Q-Taste"
+      ],
+      "correctIndex": 0,
+      "explanation": "In Av steuert das Hauptwahlrad (oben, direkt hinter dem Auslöser) die Blende. Das Schnellwahlrad übernimmt dann die Belichtungskorrektur.",
+      "kidExplanation": "Oben, gleich hinter dem Auslöser, ist ein kleines Rad. Damit drehst du die Blende.",
+      "brand": "Canon"
+    },
+    {
+      "id": "kam-006",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Canon EOS R6 Mark II und EOS 90D: Wie erreichst du den Bulb-Modus?",
+      "options": [
+        "Über die Position B auf dem Modusrad",
+        "Im Modus M über 30\" hinaus",
+        "Über die M-Fn-Taste",
+        "Gar nicht – die Kamera hat kein Bulb"
+      ],
+      "correctIndex": 0,
+      "explanation": "Viele Canon-Modelle – spiegellos wie die EOS R6 Mark II und Spiegelreflex wie die EOS 90D – haben eine eigene Position B auf dem Modusrad.",
+      "kidExplanation": "Bei dieser Canon gibt es auf dem Drehrad ein eigenes B.",
+      "brand": "Canon",
+      "cameras": [
+        "canon-r6ii",
+        "canon-90d"
+      ]
+    },
+    {
+      "id": "kam-007",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Canon: Wofür steht der Modus Fv?",
+      "options": [
+        "Flexible Automatik – jeder Wert kann einzeln auf AUTO gestellt werden",
+        "Feste Verschlusszeit",
+        "Fokus-Vorwahl",
+        "Film-Video"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fv (Flexible Priority) erlaubt, Zeit, Blende, ISO und Belichtungskorrektur jeweils einzeln manuell oder auf AUTO zu stellen.",
+      "kidExplanation": "Bei Fv darfst du dir aussuchen, was die Kamera macht und was du machst.",
+      "brand": "Canon",
+      "cameras": [
+        "canon-r6ii"
+      ]
+    },
+    {
+      "id": "kam-008",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Canon: Was macht im Modus M das Schnellwahlrad standardmäßig?",
+      "options": [
+        "Es stellt die Blende ein",
+        "Es stellt die Zeit ein",
+        "Es stellt die Belichtungskorrektur ein",
+        "Es wechselt den Modus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Im Modus M liegt bei Canon die Zeit auf dem Hauptwahlrad und die Blende auf dem Schnellwahlrad.",
+      "kidExplanation": "In M: vorne oben dreht die Zeit, das andere Rad dreht die Blende.",
+      "brand": "Canon"
+    },
+    {
+      "id": "kam-009",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Nikon: Wie stellst du die ISO ein?",
+      "options": [
+        "ISO-Taste gedrückt halten und am Haupteinstellrad drehen",
+        "Am Modusrad",
+        "Am Blendenring",
+        "Über die Taste ±"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nikon arbeitet nach dem Prinzip „Taste halten + Rad drehen“: ISO-Taste halten, Haupteinstellrad für den Wert, Subeinstellrad für Auto-ISO ein/aus.",
+      "kidExplanation": "Halte den ISO-Knopf fest und dreh dabei am Rad.",
+      "brand": "Nikon"
+    },
+    {
+      "id": "kam-010",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Nikon (Z6 III und D7500): Was erscheint, wenn du im Modus M die Zeit über 30 s hinaus und dann noch weiter drehst?",
+      "options": [
+        "Erst „Bulb“, dann „Time“",
+        "Nur „B“",
+        "Die Kamera springt zu 1/4000 s",
+        "„Auto“"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nach 30 s folgen bei Nikon – spiegellos wie Spiegelreflex – „Bulb“ (offen solange gedrückt) und „Time“ (Start/Stopp mit zwei Drücken).",
+      "kidExplanation": "Erst kommt Bulb, dann Time. Bei Time drückst du zum Starten und nochmal zum Stoppen.",
+      "brand": "Nikon"
+    },
+    {
+      "id": "kam-011",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Nikon: Welches Rad stellt im Modus A die Blende ein?",
+      "options": [
+        "Das Subeinstellrad (vorne)",
+        "Das Haupteinstellrad (hinten)",
+        "Das Modusrad",
+        "Der Fokusring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Nikon liegt die Blende standardmäßig auf dem vorderen Subeinstellrad, die Zeit auf dem hinteren Haupteinstellrad.",
+      "kidExplanation": "Das Rad vorne am Griff ist für die Blende.",
+      "brand": "Nikon"
+    },
+    {
+      "id": "kam-012",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Nikon: Welche Taste öffnet das Schnellmenü?",
+      "options": [
+        "i",
+        "Fn",
+        "Q",
+        "Menu"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nikon nennt das Schnellmenü i-Menü. Es wird über die i-Taste geöffnet.",
+      "kidExplanation": "Bei Nikon heißt der Knopf i.",
+      "brand": "Nikon"
+    },
+    {
+      "id": "kam-021",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Canon EOS 90D: Wo findest du die ISO-Taste?",
+      "options": [
+        "Oben vor dem Schulterdisplay, neben dem Hauptwahlrad",
+        "Unten auf der Kamera",
+        "Am Objektiv",
+        "Es gibt keine – nur im Menü"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die EOS 90D hat oben vor dem Schulterdisplay eine Reihe von Tasten, darunter ISO. Drücken und mit dem Hauptwahlrad einstellen.",
+      "kidExplanation": "Oben auf der Kamera, vor dem kleinen Display, gibt es einen eigenen ISO-Knopf.",
+      "cameras": [
+        "canon-90d"
+      ],
+      "brand": "Canon"
+    },
+    {
+      "id": "kam-022",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Canon EOS 90D: Mit welchem Rad stellst du im Modus M die Blende ein?",
+      "options": [
+        "Mit dem großen Schnellwahlrad auf der Rückseite",
+        "Mit dem Hauptwahlrad hinter dem Auslöser",
+        "Mit dem Modusrad",
+        "Mit dem Zoomring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Im Modus M liegt bei der 90D die Zeit auf dem Hauptwahlrad und die Blende auf dem Schnellwahlrad hinten.",
+      "kidExplanation": "Hinten auf der Kamera ist ein großes Rad – damit drehst du im Modus M die Blende.",
+      "cameras": [
+        "canon-90d"
+      ],
+      "brand": "Canon"
+    },
+    {
+      "id": "kam-023",
+      "category": "kamera",
+      "difficulty": 1,
+      "text": "Nikon D7500: Mit welchem Rad stellst du im Modus S die Verschlusszeit ein?",
+      "options": [
+        "Mit dem Haupteinstellrad hinten",
+        "Mit dem Subeinstellrad vorne",
+        "Mit dem Modusrad",
+        "Mit dem Fokusring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Nikon steuert das hintere Haupteinstellrad die Zeit, das vordere Subeinstellrad die Blende.",
+      "kidExplanation": "Das Rad hinten oben, wo dein Daumen liegt, stellt die Zeit ein.",
+      "cameras": [
+        "nikon-d7500"
+      ],
+      "brand": "Nikon"
+    },
+    {
+      "id": "kam-024",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Nikon D7500: Wie stellst du die Belichtungskorrektur ein?",
+      "options": [
+        "±-Taste gedrückt halten und am Haupteinstellrad drehen",
+        "Am Modusrad auf ± stellen",
+        "Nur im i-Menü",
+        "Am Blendenring des Objektivs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Auch an der D7500 gilt das Nikon-Prinzip: Taste halten und am Rad drehen. Die ±-Taste sitzt oben neben dem Auslöser.",
+      "kidExplanation": "Halte den ±-Knopf oben fest und dreh dabei am hinteren Rad.",
+      "cameras": [
+        "nikon-d7500"
+      ],
+      "brand": "Nikon"
+    },
+    {
+      "id": "kam-025",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Spiegelreflexkamera: Siehst du im optischen Sucher schon vor der Aufnahme, wie hell das Foto wird?",
+      "options": [
+        "Nein – du siehst das echte Motiv; die Helligkeit zeigt erst das Foto, der Live-View oder die Belichtungsskala",
+        "Ja, der Sucher wird automatisch heller oder dunkler",
+        "Ja, aber nur im Modus M",
+        "Nur bei hoher ISO"
+      ],
+      "correctIndex": 0,
+      "explanation": "Der optische Sucher zeigt das Bild über den Spiegel direkt durchs Objektiv. Blende, Zeit und ISO verändern seine Helligkeit nicht – achte auf die Belichtungsskala und kontrolliere danach das Histogramm.",
+      "kidExplanation": "Durch den Sucher siehst du die echte Welt, wie durch ein Fenster. Wie hell das Foto wird, siehst du erst danach auf dem Display.",
+      "cameras": [
+        "canon-90d",
+        "nikon-d7500"
+      ]
+    },
+    {
+      "id": "kam-026",
+      "category": "kamera",
+      "difficulty": 2,
+      "text": "Spiegellose Kamera: Was zeigt dir der elektronische Sucher (bzw. das Display) vor der Aufnahme?",
+      "options": [
+        "Eine Vorschau mit der eingestellten Helligkeit – zu dunkel eingestellt heißt dunkles Sucherbild",
+        "Immer dieselbe Helligkeit, egal was du einstellst",
+        "Nur die Fokuspunkte, kein Bild",
+        "Das Bild über einen Spiegel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Spiegellose Kameras zeigen ein Live-Bild vom Sensor. Mit aktivierter Belichtungsvorschau siehst du schon vor der Aufnahme, wie hell das Foto wird.",
+      "kidExplanation": "Der Sucher ist ein kleiner Bildschirm. Er zeigt dir schon vorher, wie hell dein Foto wird.",
+      "cameras": [
+        "sony-a7iv",
+        "canon-r6ii",
+        "nikon-z6iii"
+      ]
+    },
+    {
+      "id": "mes-001",
+      "category": "messung",
+      "difficulty": 1,
+      "text": "Worauf belichtet der Belichtungsmesser der Kamera das gemessene Motiv?",
+      "options": [
+        "Auf ein mittleres Grau (ca. 18 % Reflexion)",
+        "Auf reines Weiß",
+        "Auf reines Schwarz",
+        "Auf die hellste Farbe im Bild"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kameras messen das reflektierte Licht und gehen davon aus, dass das Gemessene mittelgrau ist. Helle Motive werden dadurch zu dunkel, dunkle zu hell.",
+      "kidExplanation": "Die Kamera möchte alles mittelgrau machen – nicht zu hell und nicht zu dunkel."
+    },
+    {
+      "id": "mes-002",
+      "category": "messung",
+      "difficulty": 1,
+      "text": "Welche Messmethode wertet das ganze Bild in vielen einzelnen Zonen aus?",
+      "options": [
+        "Mehrfeld- bzw. Matrixmessung",
+        "Spotmessung",
+        "Selektivmessung",
+        "Blitzbelichtungsmessung"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Mehrfeld- oder Matrixmessung teilt das Bild in viele Zonen und bewertet sie mit einem Algorithmus. Sie ist bei den meisten Kameras die Standardeinstellung.",
+      "kidExplanation": "Bei Mehrfeld schaut die Kamera mit vielen kleinen Augen aufs ganze Bild."
+    },
+    {
+      "id": "mes-003",
+      "category": "messung",
+      "difficulty": 1,
+      "text": "Eine Person steht vor einem hellen Fenster und wird auf dem Foto zu dunkel. Welche Messmethode hilft am besten?",
+      "options": [
+        "Spotmessung auf das Gesicht",
+        "Mehrfeldmessung ohne Korrektur",
+        "Mittenbetonte Messung auf das Fenster",
+        "Eine kürzere Verschlusszeit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei der Spotmessung zählt nur ein kleiner Bereich. Misst du auf das Gesicht, wird es richtig belichtet – das helle Fenster frisst dafür aus.",
+      "kidExplanation": "Mit Spot schaut die Kamera nur auf das Gesicht. Dann ist dein Freund schön hell, und nur das Fenster wird weiß.",
+      "kidText": "Dein Freund steht vor einem hellen Fenster und ist auf dem Foto ganz dunkel. Was hilft?",
+      "sketch": {
+        "type": "meter",
+        "scene": "indoor"
+      }
+    },
+    {
+      "id": "mes-004",
+      "category": "messung",
+      "difficulty": 2,
+      "text": "Was zeichnet die mittenbetonte Integralmessung aus?",
+      "options": [
+        "Sie misst das ganze Bild, gewichtet die Mitte aber stärker",
+        "Sie misst nur einen winzigen Punkt in der Mitte",
+        "Sie misst nur die Bildränder",
+        "Sie richtet sich nach den hellsten Stellen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei der mittenbetonten Messung fließt das ganze Bild ein, die Mitte zählt jedoch deutlich mehr (oft 60–75 %). Das macht sie berechenbar.",
+      "kidExplanation": "Die Kamera schaut aufs ganze Bild, aber die Mitte ist ihr wichtiger."
+    },
+    {
+      "id": "mes-005",
+      "category": "messung",
+      "difficulty": 2,
+      "text": "Wie groß ist der gemessene Bereich bei der Spotmessung ungefähr?",
+      "options": [
+        "Etwa 1–5 % des Bildes",
+        "Etwa 50 % des Bildes",
+        "Das ganze Bild",
+        "Genau ein Pixel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Spotmessung misst nur einen kleinen Kreis von ungefähr 1–5 % der Bildfläche, oft in der Mitte oder am aktiven Fokusfeld.",
+      "kidExplanation": "Spot ist ein ganz kleiner Punkt – wie wenn du durch eine Lupe schaust."
+    },
+    {
+      "id": "mes-006",
+      "category": "messung",
+      "difficulty": 2,
+      "text": "Wofür ist die Taste AE-L (bei Canon oft ✱) gedacht?",
+      "options": [
+        "Sie speichert die gemessene Belichtung, damit du den Bildausschnitt ändern kannst",
+        "Sie schaltet den Autofokus aus",
+        "Sie löst den Blitz aus",
+        "Sie löscht das letzte Bild"
+      ],
+      "correctIndex": 0,
+      "explanation": "AE-L steht für Auto Exposure Lock. Du misst z. B. per Spot auf ein Gesicht, speicherst und richtest die Kamera danach neu aus – die Belichtung bleibt gleich.",
+      "kidExplanation": "Mit AE-L merkt sich die Kamera die Helligkeit. Dann kannst du die Kamera bewegen, und die Helligkeit bleibt gleich."
+    },
+    {
+      "id": "mes-007",
+      "category": "messung",
+      "difficulty": 3,
+      "text": "Du misst mit der Spotmessung auf eine weiße Wand. Wie wird die Wand auf dem Foto?",
+      "options": [
+        "Grau – zu dunkel",
+        "Strahlend weiß",
+        "Schwarz",
+        "Genau richtig"
+      ],
+      "correctIndex": 0,
+      "explanation": "Was gemessen wird, belichtet die Kamera auf mittleres Grau. Eine weiße Wand wird dadurch grau. Lösung: auf etwas Mittelhelles messen oder ins Plus korrigieren.",
+      "kidExplanation": "Die Kamera macht das, worauf sie schaut, grau. Also wird die weiße Wand grau!"
+    },
+    {
+      "id": "mes-008",
+      "category": "messung",
+      "difficulty": 3,
+      "text": "Eine Sängerin steht im Scheinwerferlicht vor einer schwarzen Bühne. Was passiert mit der Mehrfeldmessung häufig?",
+      "options": [
+        "Die Sängerin wird zu hell, weil der dunkle Hintergrund die Messung aufhellt",
+        "Die Sängerin wird zu dunkel",
+        "Alles wird perfekt belichtet",
+        "Das Bild wird unscharf"
+      ],
+      "correctIndex": 0,
+      "explanation": "Der große dunkle Bereich lässt die Kamera heller belichten, wodurch die angestrahlte Person ausfrisst. Besser: Spotmessung oder spitzlichtbetonte Messung bzw. Korrektur ins Minus.",
+      "kidExplanation": "Weil fast alles schwarz ist, denkt die Kamera, es ist sehr dunkel, und macht das Foto zu hell. Die Sängerin wird ganz weiß."
+    },
+    {
+      "id": "mes-009",
+      "category": "messung",
+      "difficulty": 2,
+      "text": "Wofür ist die spitzlichtbetonte Messung gedacht?",
+      "options": [
+        "Damit die hellsten Bildstellen nicht ausfressen",
+        "Damit die Schatten heller werden",
+        "Für scharfe Bilder bei Bewegung",
+        "Für den Weißabgleich"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die spitzlichtbetonte Messung (z. B. bei Nikon und Sony) richtet sich nach den hellsten Bereichen, damit diese Zeichnung behalten. Der Rest wird dafür oft dunkler.",
+      "kidExplanation": "Diese Messung passt auf, dass helle Stellen nicht ganz weiß werden."
+    },
+    {
+      "id": "wb-001",
+      "category": "weissabgleich",
+      "difficulty": 1,
+      "text": "Wofür ist der Weißabgleich da?",
+      "options": [
+        "Damit Weiß unter jeder Lichtfarbe auch weiß aussieht",
+        "Damit das Bild heller wird",
+        "Damit Bewegungen scharf werden",
+        "Damit der Hintergrund unscharf wird"
+      ],
+      "correctIndex": 0,
+      "explanation": "Licht hat unterschiedliche Farben. Der Weißabgleich gleicht diese Lichtfarbe aus, damit neutrale Farben wie Weiß und Grau auch neutral bleiben.",
+      "kidExplanation": "Licht hat Farben. Der Weißabgleich sorgt dafür, dass Weiß auf dem Foto wirklich weiß ist."
+    },
+    {
+      "id": "wb-002",
+      "category": "weissabgleich",
+      "difficulty": 1,
+      "text": "In welcher Einheit wird die Farbtemperatur des Lichts angegeben?",
+      "options": [
+        "Kelvin (K)",
+        "Lux",
+        "Blendenstufen",
+        "Grad Celsius"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Farbtemperatur wird in Kelvin angegeben, z. B. Glühlampe ca. 3.200 K, Tageslicht ca. 5.500 K.",
+      "kidExplanation": "Die Farbe des Lichts misst man in Kelvin."
+    },
+    {
+      "id": "wb-003",
+      "category": "weissabgleich",
+      "difficulty": 1,
+      "text": "Welches Licht hat die niedrigste Farbtemperatur?",
+      "options": [
+        "Kerzenlicht (ca. 1.900 K)",
+        "Mittagssonne (ca. 5.500 K)",
+        "Bewölkter Himmel (ca. 6.500 K)",
+        "Schatten (ca. 7.500 K)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kerzenlicht ist sehr warm und orangefarben und hat eine niedrige Farbtemperatur. Je höher die Kelvinzahl, desto kühler und bläulicher das Licht.",
+      "kidExplanation": "Kerzenlicht ist ganz orange – und orange hat kleine Kelvin-Zahlen."
+    },
+    {
+      "id": "wb-004",
+      "category": "weissabgleich",
+      "difficulty": 2,
+      "text": "Du fotografierst draußen in der Sonne, der Weißabgleich steht aber auf „Glühlampe“. Wie sieht das Bild aus?",
+      "options": [
+        "Deutlich blau",
+        "Deutlich orange",
+        "Ganz normal",
+        "Schwarz-weiß"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Glühlampen-Einstellung (ca. 3.200 K) rechnet viel Blau hinein, um orangefarbenes Licht auszugleichen. Bei neutralem Tageslicht wird das Bild dadurch blau.",
+      "kidExplanation": "Die Kamera denkt, es ist orangefarbenes Lampenlicht, und nimmt Orange weg. Draußen ist aber gar kein Orange – also wird alles blau!",
+      "kidText": "Draußen scheint die Sonne, aber die Kamera steht auf „Glühlampe“. Welche Farbe hat das Foto?"
+    },
+    {
+      "id": "wb-005",
+      "category": "weissabgleich",
+      "difficulty": 2,
+      "text": "Du stellst den Weißabgleich auf einen höheren Kelvinwert als das tatsächliche Licht. Was passiert?",
+      "options": [
+        "Das Bild wird wärmer (orangefarbener)",
+        "Das Bild wird kühler (blauer)",
+        "Das Bild wird heller",
+        "Nichts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein zu hoch eingestellter Kelvinwert lässt die Kamera Wärme hinzufügen – das Bild wird orangefarbener. Ein zu niedriger Wert macht es blauer.",
+      "kidExplanation": "Höhere Zahl einstellen = das Foto wird wärmer und oranger."
+    },
+    {
+      "id": "wb-006",
+      "category": "weissabgleich",
+      "difficulty": 2,
+      "text": "Warum wirkt ein Sonnenuntergang mit automatischem Weißabgleich manchmal blass?",
+      "options": [
+        "Der AWB versucht, das warme Licht zu neutralisieren",
+        "Der AWB macht das Bild unscharf",
+        "Der AWB erhöht die ISO",
+        "Der AWB verkürzt die Belichtungszeit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Der automatische Weißabgleich will Farbstiche entfernen – auch gewünschte. Mit „Tageslicht“ oder „Bewölkt“ bleibt das warme Abendlicht erhalten.",
+      "kidExplanation": "Die Automatik denkt, das Orange ist ein Fehler, und nimmt es weg. Mit „Tageslicht“ bleibt der Sonnenuntergang schön orange."
+    },
+    {
+      "id": "wb-007",
+      "category": "weissabgleich",
+      "difficulty": 2,
+      "text": "In welchem Dateiformat lässt sich der Weißabgleich nachträglich ohne Qualitätsverlust ändern?",
+      "options": [
+        "RAW",
+        "JPEG",
+        "PNG",
+        "GIF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Im RAW-Format wird der Weißabgleich nur als Information gespeichert und kann in der Bildbearbeitung frei geändert werden. Beim JPEG ist er fest eingerechnet.",
+      "kidExplanation": "Bei RAW-Fotos kannst du die Farbe später am Computer noch ändern."
+    },
+    {
+      "id": "wb-008",
+      "category": "weissabgleich",
+      "difficulty": 3,
+      "text": "Was brauchst du für einen manuellen (benutzerdefinierten) Weißabgleich?",
+      "options": [
+        "Eine weiße oder graue Fläche (Graukarte) im vorhandenen Licht",
+        "Einen Graufilter vor dem Objektiv",
+        "Ein Stativ",
+        "Eine sehr hohe ISO"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beim manuellen Weißabgleich fotografiert man eine neutrale Fläche im Licht der Szene. Die Kamera berechnet daraus die exakt passende Korrektur.",
+      "kidExplanation": "Du fotografierst ein weißes oder graues Blatt. Daran lernt die Kamera, welche Farbe das Licht hat."
+    },
+    {
+      "id": "wb-009",
+      "category": "weissabgleich",
+      "difficulty": 3,
+      "text": "Im Raum leuchtet eine Glühlampe, durchs Fenster fällt Tageslicht. Was ist das Problem?",
+      "options": [
+        "Mischlicht: Es gibt keinen Weißabgleich, der für beide Lichtquellen passt",
+        "Das Bild wird unscharf",
+        "Der Autofokus funktioniert nicht",
+        "Die Belichtungsmessung fällt aus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei Mischlicht haben die Lichtquellen unterschiedliche Farbtemperaturen. Man entscheidet sich für die wichtigste Quelle, wählt einen Kompromiss oder passt Licht mit Farbfolien an.",
+      "kidExplanation": "Die Lampe ist orange und das Fenster bläulich. Die Kamera kann nicht beides gleichzeitig weiß machen."
+    },
+    {
+      "id": "blitz-001",
+      "category": "blitz",
+      "difficulty": 1,
+      "text": "Du fotografierst in einem Raum mit weißer Decke. Wohin drehst du den Blitzkopf für weiches Licht?",
+      "options": [
+        "Nach oben gegen die Decke",
+        "Direkt nach vorne auf die Person",
+        "Auf den Boden",
+        "Gar nicht – Blitz ausschalten"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die weiße Decke wird zur großen, weichen Lichtquelle. Das Licht kommt von oben, Schatten werden weich und hart wirkende Reflexe verschwinden.",
+      "kidExplanation": "Wenn du an die Decke blitzt, wird die ganze Decke zu einer riesigen Lampe. Das Licht wird schön weich.",
+      "sketch": {
+        "type": "flash",
+        "dir": "up45",
+        "answerDir": "up45",
+        "dist": 2,
+        "setupBeam": "none"
+      }
+    },
+    {
+      "id": "blitz-002",
+      "category": "blitz",
+      "difficulty": 1,
+      "text": "Was passiert typischerweise, wenn du direkt nach vorne blitzt und die Person nah vor einer Wand steht?",
+      "options": [
+        "Hinter der Person entsteht ein harter Schatten an der Wand",
+        "Die Person wird weich ausgeleuchtet",
+        "Der Hintergrund wird heller als die Person",
+        "Das Bild wird unscharf"
+      ],
+      "correctIndex": 0,
+      "explanation": "Direktes Blitzlicht kommt von einer kleinen Lichtquelle und wirft harte Schatten. Steht die Person nah an der Wand, sieht man den Schatten deutlich.",
+      "kidExplanation": "Der Blitz leuchtet wie eine Taschenlampe von vorne – hinter der Person siehst du dann einen dunklen Schatten an der Wand."
+    },
+    {
+      "id": "blitz-003",
+      "category": "blitz",
+      "difficulty": 1,
+      "text": "Wofür steht TTL beim Blitzen?",
+      "options": [
+        "Through The Lens – die Kamera misst den Blitz durchs Objektiv und dosiert die Leistung",
+        "Time To Light – die Blitzdauer",
+        "Total Tele Lens – Zoomstellung des Blitzes",
+        "Eine feste Blitzleistung"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei TTL sendet der Blitz einen Messblitz, die Kamera misst das zurückkommende Licht durchs Objektiv und bestimmt die Leistung automatisch.",
+      "kidExplanation": "Bei TTL rechnet die Kamera selbst aus, wie hell der Blitz sein muss."
+    },
+    {
+      "id": "blitz-004",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Wann ist die manuelle Blitzsteuerung besser als TTL?",
+      "options": [
+        "Bei festem Aufbau, bei dem jedes Bild exakt gleich hell sein soll – z. B. Produkt- oder Studiofotos",
+        "Bei einer Feier, auf der sich alle bewegen",
+        "Wenn sich der Abstand ständig ändert",
+        "Nie – TTL ist immer besser"
+      ],
+      "correctIndex": 0,
+      "explanation": "Manuell liefert bei gleichem Abstand immer identische Ergebnisse und lässt sich nicht von heller Kleidung oder Spiegelungen täuschen. Bei wechselnden Abständen ist TTL bequemer.",
+      "kidExplanation": "Wenn alles still steht und du viele gleiche Fotos machst, stellst du den Blitz am besten selbst ein."
+    },
+    {
+      "id": "blitz-005",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Du verdoppelst den Abstand zwischen Blitz und Person, die Blitzleistung bleibt gleich (manuell). Wie viel Licht kommt an?",
+      "options": [
+        "Nur noch ein Viertel – zwei Blendenstufen weniger",
+        "Die Hälfte",
+        "Genauso viel",
+        "Doppelt so viel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nach dem Abstandsgesetz nimmt das Licht mit dem Quadrat der Entfernung ab: doppelter Abstand = 1/4 Licht = 2 Stufen weniger.",
+      "kidExplanation": "Wenn du doppelt so weit weg bist, kommt viel weniger Licht an – nur noch ein Viertel!",
+      "sketch": {
+        "type": "inverse"
+      }
+    },
+    {
+      "id": "blitz-006",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Eine Person steht vor hellem Himmel. Du möchtest sie mit dem Blitz nur etwas aufhellen. Welche Einstellung passt?",
+      "options": [
+        "TTL mit Blitzbelichtungskorrektur von etwa −1 bis −2 Stufen",
+        "Manuell mit voller Leistung",
+        "Blitzkopf nach hinten drehen",
+        "Blitzbelichtungskorrektur +2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein Aufhellblitz soll natürlich wirken und das Umgebungslicht nicht übertönen. Deshalb wird die Blitzleistung per FEC um 1–2 Stufen reduziert.",
+      "kidExplanation": "Der Blitz soll nur ein bisschen helfen. Deshalb machst du ihn mit dem Minus-Knopf etwas schwächer."
+    },
+    {
+      "id": "blitz-007",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Was passiert beim Blitzen, wenn du die Verschlusszeit verlängerst (z. B. von 1/200 auf 1/30 s), Blende und ISO bleiben gleich?",
+      "options": [
+        "Der Hintergrund (Umgebungslicht) wird heller, die geblitzte Person kaum",
+        "Die Person wird viel heller",
+        "Alles wird dunkler",
+        "Der Blitz wird schwächer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Das extrem kurze Blitzlicht hängt kaum von der Verschlusszeit ab. Die längere Zeit lässt nur mehr Umgebungslicht herein – der Hintergrund wird heller.",
+      "kidExplanation": "Der Blitz ist so kurz, dass ihm die Zeit egal ist. Aber das Licht im Raum kommt länger rein – der Hintergrund wird heller."
+    },
+    {
+      "id": "blitz-008",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Was zeigt sich, wenn du mit Blitz eine kürzere Zeit als die Synchronzeit wählst (ohne HSS)?",
+      "options": [
+        "Ein schwarzer Balken im Bild",
+        "Rote Augen",
+        "Ein unscharfer Hintergrund",
+        "Ein Blaustich"
+      ],
+      "correctIndex": 0,
+      "explanation": "Oberhalb der Synchronzeit ist der Sensor nie ganz frei – ein Verschlussvorhang verdeckt beim Blitzen einen Teil. Abhilfe: Zeit verlängern oder Kurzzeitsynchronisation (HSS) nutzen.",
+      "kidExplanation": "Dann ist der Vorhang vor dem Sensor nicht ganz offen, wenn der Blitz leuchtet – ein Teil des Fotos bleibt schwarz."
+    },
+    {
+      "id": "blitz-009",
+      "category": "blitz",
+      "difficulty": 3,
+      "text": "Wofür nutzt man die Kurzzeitsynchronisation (HSS bzw. FP)?",
+      "options": [
+        "Um mit Blitz kürzere Zeiten als die Synchronzeit zu verwenden, z. B. offene Blende bei Sonne",
+        "Um den Blitz auf den 2. Vorhang zu legen",
+        "Um rote Augen zu vermeiden",
+        "Um den Blitz drahtlos auszulösen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei HSS gibt der Blitz viele schnelle Impulse ab, sodass auch Zeiten wie 1/1000 s möglich sind. Dafür sinkt die Reichweite deutlich.",
+      "kidExplanation": "Mit HSS blitzt der Blitz ganz schnell viele Male. So geht Blitzen auch mit sehr kurzen Zeiten."
+    },
+    {
+      "id": "blitz-010",
+      "category": "blitz",
+      "difficulty": 3,
+      "text": "Ein Blitz hat die Leitzahl 40 (ISO 100). Bis zu welcher Entfernung reicht volle Leistung bei Blende f/4 (direkt geblitzt)?",
+      "options": [
+        "Etwa 10 m",
+        "Etwa 4 m",
+        "Etwa 40 m",
+        "Etwa 160 m"
+      ],
+      "correctIndex": 0,
+      "explanation": "Leitzahl = Blende × Entfernung. Also Entfernung = 40 ÷ 4 = 10 m. Beim indirekten Blitzen ist die Reichweite deutlich geringer.",
+      "kidExplanation": "Die Leitzahl geteilt durch die Blendenzahl ergibt die Meter: 40 geteilt durch 4 ist 10."
+    },
+    {
+      "id": "blitz-011",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Warum sollte man nicht gegen eine grüne oder rote Wand blitzen?",
+      "options": [
+        "Das reflektierte Licht nimmt die Farbe der Wand an – das Bild bekommt einen Farbstich",
+        "Der Blitz wird dadurch stärker",
+        "Die Wand kann beschädigt werden",
+        "Der Autofokus funktioniert nicht mehr"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beim indirekten Blitzen wird die Wand zur Lichtquelle. Farbige Flächen färben das Licht und damit Haut und Kleidung.",
+      "kidExplanation": "Das Licht prallt von der Wand ab und nimmt ihre Farbe mit – dann wird dein Freund grün oder rot!"
+    },
+    {
+      "id": "blitz-012",
+      "category": "blitz",
+      "difficulty": 3,
+      "text": "Wann ist Blitzen auf den 2. Verschlussvorhang sinnvoll?",
+      "options": [
+        "Bei langer Belichtungszeit und Bewegung, damit Lichtspuren hinter dem Motiv herlaufen",
+        "Bei sehr kurzer Zeit in der Sonne",
+        "Für mehr Reichweite",
+        "Um Akku zu sparen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mit dem 2. Vorhang zündet der Blitz am Ende der Belichtung. Bewegungsspuren (z. B. Lichter eines Autos) entstehen davor und laufen so natürlich hinter dem eingefrorenen Motiv her.",
+      "kidExplanation": "Der Blitz leuchtet erst am Ende. Dann sehen Lichtstreifen so aus, als würden sie hinter dem Motiv herfliegen."
+    },
+    {
+      "id": "raw-001",
+      "category": "raw",
+      "difficulty": 1,
+      "text": "Welches Format ist ein fertig entwickeltes, komprimiertes Bild?",
+      "options": [
+        "JPEG",
+        "RAW",
+        "DNG",
+        "NEF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beim JPEG entwickelt die Kamera das Bild selbst und speichert es komprimiert. RAW-Formate wie DNG oder NEF enthalten die unbearbeiteten Sensordaten.",
+      "kidExplanation": "JPEG ist das fertige Foto – wie ein fertig gebackener Kuchen."
+    },
+    {
+      "id": "raw-002",
+      "category": "raw",
+      "difficulty": 1,
+      "text": "Welcher Nachteil hat RAW gegenüber JPEG?",
+      "options": [
+        "Größere Dateien, die erst entwickelt werden müssen",
+        "Schlechtere Bildqualität",
+        "Kein Weißabgleich möglich",
+        "Weniger Farben"
+      ],
+      "correctIndex": 0,
+      "explanation": "RAW-Dateien sind deutlich größer und müssen in einem RAW-Konverter bearbeitet werden, bevor man sie teilen kann.",
+      "kidExplanation": "RAW-Dateien sind viel größer, und du musst sie erst am Computer fertig machen."
+    },
+    {
+      "id": "raw-003",
+      "category": "raw",
+      "difficulty": 1,
+      "text": "Kann man bei einer RAW-Datei den Weißabgleich nachträglich ohne Qualitätsverlust ändern?",
+      "options": [
+        "Ja",
+        "Nein, nie",
+        "Nur bei Tageslicht",
+        "Nur in Schwarz-Weiß"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei RAW wird der Weißabgleich nur als Information gespeichert und erst bei der Entwicklung angewendet – er lässt sich frei ändern.",
+      "kidExplanation": "Ja! Bei RAW kannst du die Farbe des Lichts später noch ganz einfach ändern."
+    },
+    {
+      "id": "raw-004",
+      "category": "raw",
+      "difficulty": 2,
+      "text": "Wie viele Helligkeitsstufen pro Farbkanal speichert ein JPEG?",
+      "options": [
+        "256 (8 Bit)",
+        "4.096 (12 Bit)",
+        "16.384 (14 Bit)",
+        "Unbegrenzt"
+      ],
+      "correctIndex": 0,
+      "explanation": "JPEG arbeitet mit 8 Bit pro Kanal, also 256 Stufen. RAW-Dateien speichern meist 12 oder 14 Bit und damit viel feinere Abstufungen.",
+      "kidExplanation": "Ein JPEG kennt 256 Stufen von dunkel bis hell. RAW kennt viel, viel mehr."
+    },
+    {
+      "id": "raw-005",
+      "category": "raw",
+      "difficulty": 2,
+      "text": "Der Himmel ist auf deinem Foto leicht überbelichtet. Womit lassen sich die Wolken eher zurückholen?",
+      "options": [
+        "Mit der RAW-Datei",
+        "Mit dem JPEG",
+        "Mit beiden gleich gut",
+        "Mit keinem von beiden"
+      ],
+      "correctIndex": 0,
+      "explanation": "RAW enthält Reserven in den Lichtern. Beim JPEG sind die hellen Bereiche bereits auf Weiß gesetzt und die Zeichnung ist verloren.",
+      "kidExplanation": "In der RAW-Datei hat die Kamera noch mehr gespeichert – damit kommen die Wolken zurück."
+    },
+    {
+      "id": "raw-006",
+      "category": "raw",
+      "difficulty": 2,
+      "text": "Welche Dateiendung gehört NICHT zu einem RAW-Format?",
+      "options": [
+        ".JPG",
+        ".CR3",
+        ".NEF",
+        ".ARW"
+      ],
+      "correctIndex": 0,
+      "explanation": ".JPG ist ein JPEG. .CR3 (Canon), .NEF (Nikon) und .ARW (Sony) sind herstellerspezifische RAW-Formate.",
+      "kidExplanation": ".JPG ist das fertige Foto. Die anderen sind RAW-Dateien von Canon, Nikon und Sony."
+    },
+    {
+      "id": "raw-007",
+      "category": "raw",
+      "difficulty": 2,
+      "text": "Wann ist JPEG oft die bessere Wahl?",
+      "options": [
+        "Wenn Bilder schnell geteilt werden sollen und lange Serien nötig sind",
+        "Bei schwierigem Gegenlicht",
+        "Wenn man den Weißabgleich später ändern will",
+        "Für maximale Nachbearbeitung"
+      ],
+      "correctIndex": 0,
+      "explanation": "JPEGs sind klein und sofort fertig – ideal zum schnellen Teilen und für lange Serienbilder, weil der Kamerapuffer langsamer voll wird.",
+      "kidExplanation": "Wenn du die Fotos gleich verschicken willst oder ganz viele Fotos hintereinander machst, ist JPEG praktisch."
+    },
+    {
+      "id": "raw-008",
+      "category": "raw",
+      "difficulty": 3,
+      "text": "Was kann auch eine RAW-Datei NICHT retten?",
+      "options": [
+        "Ein verwackeltes oder unscharfes Foto",
+        "Leicht überbelichtete Lichter",
+        "Einen falschen Weißabgleich",
+        "Etwas zu dunkle Schatten"
+      ],
+      "correctIndex": 0,
+      "explanation": "RAW enthält mehr Helligkeits- und Farbinformationen, aber keine zusätzliche Schärfe. Verwacklung und Fehlfokus lassen sich nicht beheben.",
+      "kidExplanation": "Wenn das Foto verwackelt ist, hilft auch RAW nicht – es bleibt verschwommen."
+    },
+    {
+      "id": "raw-009",
+      "category": "raw",
+      "difficulty": 2,
+      "text": "Was bedeutet die Einstellung „RAW + JPEG“?",
+      "options": [
+        "Die Kamera speichert jedes Bild gleichzeitig als RAW und als JPEG",
+        "Die Kamera wählt automatisch das bessere Format",
+        "Das JPEG wird in die RAW-Datei eingebettet und gelöscht",
+        "Nur jedes zweite Bild wird als RAW gespeichert"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mit RAW + JPEG bekommst du beide Dateien: ein fertiges JPEG zum Teilen und die RAW-Datei für aufwendige Bearbeitung.",
+      "kidExplanation": "Die Kamera speichert jedes Foto zweimal: einmal fertig und einmal als Bastelkiste."
+    },
+    {
+      "id": "vz-011",
+      "category": "verschlusszeit",
+      "difficulty": 1,
+      "text": "Fotografierst du aus der Hand: Sollte der Bildstabilisator an oder aus sein?",
+      "options": [
+        "An",
+        "Aus",
+        "Egal",
+        "Nur bei Nacht an"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aus der Hand gleicht der Stabilisator Zitterbewegungen aus und erlaubt längere Zeiten ohne Verwacklung.",
+      "kidExplanation": "Aus der Hand: an! Er hilft gegen wackelige Hände."
+    },
+    {
+      "id": "ges-001",
+      "category": "gestaltung",
+      "difficulty": 1,
+      "text": "Wo platzierst du dein Hauptmotiv nach der Drittelregel?",
+      "options": [
+        "Auf einem Schnittpunkt der Drittellinien",
+        "Genau in der Bildmitte",
+        "Ganz am Bildrand",
+        "In einer Ecke"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die Drittelregel teilt das Bild in neun Felder. Ein Motiv auf einem der vier Schnittpunkte wirkt meist spannender als eines in der Mitte.",
+      "kidExplanation": "Stell dir ein Tic-Tac-Toe-Gitter vor. Dein Motiv kommt auf eine Kreuzung.",
+      "sketch": {
+        "type": "thirds"
+      }
+    },
+    {
+      "id": "ges-002",
+      "category": "gestaltung",
+      "difficulty": 1,
+      "text": "Dein Landschaftsfoto wirkt unruhig, weil am Rand ein Mülleimer und ein halber Laternenmast zu sehen sind. Was hilft?",
+      "options": [
+        "Näher herangehen oder den Standpunkt ändern, bis die Störer weg sind",
+        "Eine höhere ISO",
+        "Den Blitz einschalten",
+        "Eine kürzere Verschlusszeit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Störende Elemente am Rand lenken vom Hauptmotiv ab. Ein anderer Standpunkt oder ein engerer Ausschnitt räumt das Bild auf.",
+      "kidExplanation": "Geh ein paar Schritte, bis der Mülleimer nicht mehr im Bild ist. Aufräumen macht Fotos schöner!"
+    },
+    {
+      "id": "ges-003",
+      "category": "gestaltung",
+      "difficulty": 1,
+      "text": "Aus welcher Höhe wirken Fotos von Hunden und Kindern meist am lebendigsten?",
+      "options": [
+        "Auf ihrer Augenhöhe",
+        "Von schräg oben im Stehen",
+        "Senkrecht von oben",
+        "Von hinten"
+      ],
+      "correctIndex": 0,
+      "explanation": "Auf Augenhöhe nimmt der Betrachter die Perspektive des Motivs ein. Fotos von oben herab wirken oft distanziert und langweilig.",
+      "kidExplanation": "Geh in die Hocke! Auf Augenhöhe sieht der Hund viel lebendiger aus."
+    },
+    {
+      "id": "ges-004",
+      "category": "gestaltung",
+      "difficulty": 2,
+      "text": "Wofür sind Führungslinien wie Wege, Ufer oder Zäune gut?",
+      "options": [
+        "Sie lenken den Blick des Betrachters ins Bild und zum Motiv",
+        "Sie machen das Bild heller",
+        "Sie verhindern Verwacklung",
+        "Sie ersetzen den Weißabgleich"
+      ],
+      "correctIndex": 0,
+      "explanation": "Linien ziehen den Blick mit. Führen sie zum Hauptmotiv, entsteht Tiefe und eine klare Bildaussage.",
+      "kidExplanation": "Ein Weg im Bild ist wie ein Pfeil: Er zeigt deinen Augen, wohin sie schauen sollen."
+    },
+    {
+      "id": "ges-005",
+      "category": "gestaltung",
+      "difficulty": 2,
+      "text": "Was bedeutet „Vordergrund macht Bild gesund“?",
+      "options": [
+        "Ein interessanter Vordergrund gibt dem Bild Tiefe",
+        "Der Vordergrund muss immer scharf sein",
+        "Man soll nur den Vordergrund fotografieren",
+        "Der Vordergrund sollte hell sein"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mehrere Bildebenen – Vorder-, Mittel- und Hintergrund – lassen besonders Landschaftsfotos räumlich wirken.",
+      "kidExplanation": "Wenn vorne etwas Spannendes ist, zum Beispiel eine Blume, sieht das Bild viel tiefer aus."
+    },
+    {
+      "id": "ges-006",
+      "category": "gestaltung",
+      "difficulty": 2,
+      "text": "Wie wirkt ein Motiv aus der Froschperspektive?",
+      "options": [
+        "Groß und mächtig",
+        "Klein und unbedeutend",
+        "Flach und langweilig",
+        "Verschwommen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Von ganz unten fotografiert ragt das Motiv über dem Betrachter auf und wirkt eindrucksvoll – oft vor dem Himmel als ruhigem Hintergrund.",
+      "kidExplanation": "Wenn du ganz tief von unten fotografierst, sieht dein Motiv riesig aus – wie ein Riese!"
+    },
+    {
+      "id": "ges-007",
+      "category": "gestaltung",
+      "difficulty": 1,
+      "text": "Zu welcher Tageszeit ist das Licht besonders warm und weich mit langen Schatten?",
+      "options": [
+        "In der goldenen Stunde nach Sonnenaufgang und vor Sonnenuntergang",
+        "Mittags um 12 Uhr",
+        "Mitten in der Nacht",
+        "Immer gleich"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei tiefstehender Sonne ist das Licht warm und weich und fällt von der Seite – lange Schatten geben Form.",
+      "kidExplanation": "Morgens und abends ist das Licht golden – deshalb heißt es goldene Stunde."
+    },
+    {
+      "id": "ges-008",
+      "category": "gestaltung",
+      "difficulty": 1,
+      "text": "Warum ist die Mittagssonne für Porträts oft ungünstig?",
+      "options": [
+        "Hartes Licht von oben erzeugt dunkle Augenschatten und harte Kontraste",
+        "Sie ist zu dunkel",
+        "Sie macht das Bild blau",
+        "Sie verursacht Bildrauschen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die hochstehende Sonne wirft harte Schatten unter Augen, Nase und Kinn. Besser: Schatten, Reflektor, Aufhellblitz oder andere Tageszeit.",
+      "kidExplanation": "Mittags kommt das Licht von ganz oben. Dann gibt es dunkle Schatten unter den Augen."
+    },
+    {
+      "id": "ges-009",
+      "category": "gestaltung",
+      "difficulty": 2,
+      "text": "Wie wirkt eine geschlossene Wolkendecke auf das Licht?",
+      "options": [
+        "Wie eine riesige Softbox: weiches Licht ohne harte Schatten",
+        "Wie ein Scheinwerfer: sehr hartes Licht",
+        "Sie macht das Licht grün",
+        "Sie hat keinen Einfluss"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wolken streuen das Sonnenlicht und machen den ganzen Himmel zur großen Lichtquelle – ideal für Porträts und Natur.",
+      "kidExplanation": "Wolken sind wie ein großes weißes Tuch vor der Sonne. Das Licht wird ganz weich."
+    },
+    {
+      "id": "ges-010",
+      "category": "gestaltung",
+      "difficulty": 2,
+      "text": "Was ist die blaue Stunde?",
+      "options": [
+        "Die Dämmerung kurz vor Sonnenaufgang bzw. nach Sonnenuntergang mit tiefblauem Himmel",
+        "Die Mittagszeit an klaren Tagen",
+        "Eine Einstellung im Weißabgleich",
+        "Die Zeit mit dem stärksten Sonnenlicht"
+      ],
+      "correctIndex": 0,
+      "explanation": "In der Dämmerung leuchtet der Himmel tiefblau, oft zusammen mit warmen Stadtlichtern – ein beliebtes Motiv für Stadtfotos.",
+      "kidExplanation": "Kurz nachdem die Sonne untergegangen ist, wird der Himmel ganz blau."
+    },
+    {
+      "id": "ges-011",
+      "category": "gestaltung",
+      "difficulty": 3,
+      "text": "Wann kann es sinnvoll sein, das Hauptmotiv bewusst genau in die Mitte zu setzen?",
+      "options": [
+        "Bei symmetrischen Motiven, z. B. Spiegelungen oder Gebäudefronten",
+        "Nie",
+        "Nur bei Nacht",
+        "Nur mit Weitwinkel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gestaltungsregeln sind Hilfen. Bei Symmetrie verstärkt die Mittelposition die Wirkung – entscheidend ist, dass du es bewusst tust.",
+      "kidExplanation": "Wenn etwas auf beiden Seiten gleich aussieht, zum Beispiel ein Spiegelbild im See, darf es auch in die Mitte."
+    },
+    {
+      "id": "aus-001",
+      "category": "ausruestung",
+      "difficulty": 1,
+      "text": "Dein Hauptmotiv ist unscharf, ein Ast im Vordergrund dagegen scharf. Was ist die wahrscheinlichste Ursache?",
+      "options": [
+        "Das automatische AF-Messfeld hat das Nächste fokussiert",
+        "Das Objektiv ist kaputt",
+        "Die ISO war zu hoch",
+        "Der Weißabgleich war falsch"
+      ],
+      "correctIndex": 0,
+      "explanation": "Im automatischen Messfeld wählt die Kamera selbst – häufig das nächste oder kontrastreichste Objekt. Mit Einzelfeld/Spot-AF bestimmst du den Punkt selbst.",
+      "kidExplanation": "Die Kamera hat geraten und den Ast genommen. Mit einem eigenen Fokuspunkt passiert das nicht."
+    },
+    {
+      "id": "aus-002",
+      "category": "ausruestung",
+      "difficulty": 1,
+      "text": "Welches AF-Messfeld empfiehlt sich für Einsteiger, um genau zu bestimmen, wo scharfgestellt wird?",
+      "options": [
+        "Einzelfeld bzw. Spot-AF",
+        "Automatische Messfeldwahl",
+        "Manueller Fokus ohne Hilfe",
+        "Gar keins"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beim Einzelfeld legst du einen einzelnen Punkt per Joystick oder Touchscreen genau aufs Motiv.",
+      "kidExplanation": "Ein einzelner Fokuspunkt, den du selbst hinschiebst."
+    },
+    {
+      "id": "aus-003",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Welcher AF-Modus eignet sich für einen rennenden Hund?",
+      "options": [
+        "AF-C / AI Servo (nachführend)",
+        "AF-S / One Shot",
+        "Manueller Fokus",
+        "Kein Autofokus"
+      ],
+      "correctIndex": 0,
+      "explanation": "AF-C bzw. AI Servo führt den Fokus ständig nach, solange der Auslöser halb gedrückt ist – ideal für bewegte Motive.",
+      "kidExplanation": "Bei schnellen Sachen stellt die Kamera immer weiter scharf – das heißt AF-C."
+    },
+    {
+      "id": "aus-004",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Bei einem Porträt mit offener Blende: Worauf muss der Fokus liegen?",
+      "options": [
+        "Auf dem Auge, das der Kamera am nächsten ist",
+        "Auf der Nasenspitze",
+        "Auf dem Hintergrund",
+        "Auf den Ohren"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei geringer Schärfentiefe entscheidet das vordere Auge über die Wirkung. Augen-AF hilft dabei.",
+      "kidExplanation": "Die Augen müssen scharf sein – am besten das Auge, das dir am nächsten ist."
+    },
+    {
+      "id": "aus-005",
+      "category": "ausruestung",
+      "difficulty": 1,
+      "text": "Welche Brennweite zeigt besonders viel von der Umgebung?",
+      "options": [
+        "Weitwinkel, z. B. 16–24 mm",
+        "Tele, z. B. 300 mm",
+        "Normalbrennweite 50 mm",
+        "85-mm-Porträtobjektiv"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kurze Brennweiten haben einen großen Bildwinkel – ideal für Landschaft, Architektur und Innenräume.",
+      "kidExplanation": "Ein Weitwinkel zeigt ganz viel auf einmal, zum Beispiel die ganze Landschaft."
+    },
+    {
+      "id": "aus-006",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Warum wird Einsteigern oft eine 50-mm-Festbrennweite empfohlen?",
+      "options": [
+        "Sie ist meist günstig, lichtstark und zwingt dazu, sich zu bewegen",
+        "Sie zoomt besonders weit",
+        "Sie braucht keinen Autofokus",
+        "Sie ist nur für Landschaften geeignet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Festbrennweiten wie 50 mm f/1.8 sind preiswert, lichtstark und scharf. Weil man nicht zoomen kann, sucht man aktiv neue Perspektiven.",
+      "kidExplanation": "Mit dem 50-mm-Objektiv kannst du nicht zoomen – du musst laufen und findest so bessere Stellen."
+    },
+    {
+      "id": "aus-007",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Du fotografierst eine Person aus größerem Abstand mit Tele statt nah mit Weitwinkel (gleiche Personengröße). Was passiert mit dem Hintergrund?",
+      "options": [
+        "Er wirkt größer und näher an der Person (Kompression)",
+        "Er wird kleiner und weiter weg",
+        "Er bleibt genau gleich",
+        "Er verschwindet"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei gleicher Motivgröße zeigt das Tele einen kleineren Ausschnitt des Hintergrunds – er erscheint größer und rückt optisch näher heran.",
+      "kidExplanation": "Mit dem Tele sieht der Hintergrund viel größer aus, so als wäre er näher dran."
+    },
+    {
+      "id": "aus-008",
+      "category": "ausruestung",
+      "difficulty": 3,
+      "text": "Welche Brennweite wirkt an einer APS-C-Kamera mit Crop-Faktor 1,5 ungefähr wie 50 mm an Vollformat?",
+      "options": [
+        "Etwa 35 mm",
+        "Etwa 50 mm",
+        "Etwa 75 mm",
+        "Etwa 24 mm"
+      ],
+      "correctIndex": 0,
+      "explanation": "35 mm × 1,5 ≈ 52 mm. Der kleinere Sensor zeigt einen engeren Ausschnitt.",
+      "kidExplanation": "Beim kleineren Sensor sieht 35 mm so aus wie 50 mm bei einer großen Kamera."
+    },
+    {
+      "id": "aus-009",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Die Kamera steht auf einem Stativ, das Bild ist trotzdem leicht unscharf. Was könnte helfen?",
+      "options": [
+        "Den Bildstabilisator ausschalten",
+        "Den Bildstabilisator auf maximale Stärke stellen",
+        "Die ISO erhöhen",
+        "Den Blitz einschalten"
+      ],
+      "correctIndex": 0,
+      "explanation": "Auf dem Stativ kann ein aktiver Stabilisator selbst Mikrobewegungen erzeugen. Im Zweifel abschalten – aus der Hand dagegen immer einschalten.",
+      "kidExplanation": "Auf dem Stativ wackelt die Kamera nicht. Der Stabilisator sucht dann Wackler, die es nicht gibt – schalte ihn aus."
+    },
+    {
+      "id": "aus-010",
+      "category": "ausruestung",
+      "difficulty": 3,
+      "text": "Was gibt die Naheinstellgrenze eines Objektivs an?",
+      "options": [
+        "Den kürzesten Abstand, auf den das Objektiv noch scharfstellen kann",
+        "Die längste Brennweite",
+        "Die größte Blendenöffnung",
+        "Die Reichweite des Blitzes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gehst du näher heran als die Naheinstellgrenze, findet der Autofokus keine Schärfe mehr. Makroobjektive haben besonders kurze Naheinstellgrenzen.",
+      "kidExplanation": "Wenn du zu nah ran gehst, kann das Objektiv nicht mehr scharfstellen. Die Grenze steht oft auf dem Objektiv."
+    },
+    {
+      "id": "wf-001",
+      "category": "workflow",
+      "difficulty": 1,
+      "text": "Ist das Bearbeiten von Fotos „Schummeln“?",
+      "options": [
+        "Nein – Bearbeitung gehört zur Fotografie, das wurde schon in der Dunkelkammer gemacht",
+        "Ja, gute Fotografen bearbeiten nie",
+        "Nur bei Smartphone-Fotos erlaubt",
+        "Nur bei Schwarz-Weiß-Fotos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Auch analog wurde aufgehellt, abgedunkelt und der Kontrast angepasst. Wichtig ist, möglichst viel schon bei der Aufnahme richtig zu machen und behutsam zu bearbeiten.",
+      "kidExplanation": "Nein! Fotos wurden schon immer verschönert – früher im Fotolabor, heute am Computer."
+    },
+    {
+      "id": "wf-002",
+      "category": "workflow",
+      "difficulty": 1,
+      "text": "Was solltest du kurz nach einem Fotoausflug mit deinen Bildern tun?",
+      "options": [
+        "Sichten und unscharfe, verwackelte oder doppelte Bilder löschen",
+        "Alles ungesehen behalten",
+        "Alle Bilder sofort ausdrucken",
+        "Die Speicherkarte formatieren, ohne zu sichern"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wer gleich aussortiert, behält den Überblick und findet seine besten Bilder wieder.",
+      "kidExplanation": "Schau die Fotos gleich an und lösch die verwackelten. Dann findest du die guten schneller."
+    },
+    {
+      "id": "wf-003",
+      "category": "workflow",
+      "difficulty": 2,
+      "text": "Was besagt die 3-2-1-Regel zur Datensicherung?",
+      "options": [
+        "3 Kopien, auf 2 verschiedenen Medien, davon 1 an einem anderen Ort",
+        "3 Fotos pro Motiv, 2 bearbeiten, 1 löschen",
+        "3 Sterne, 2 Farben, 1 Album",
+        "3 Kameras, 2 Objektive, 1 Blitz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mehrere Kopien auf unterschiedlichen Medien und eine räumlich getrennte Kopie schützen vor Defekten, Diebstahl und Feuer.",
+      "kidExplanation": "Speichere deine Fotos dreimal, an zwei verschiedenen Orten."
+    },
+    {
+      "id": "wf-004",
+      "category": "workflow",
+      "difficulty": 2,
+      "text": "Was lässt sich in der Bearbeitung kaum reparieren?",
+      "options": [
+        "Ungünstiges Licht und ein unklarer Bildaufbau",
+        "Ein leicht schiefer Horizont",
+        "Ein leichter Farbstich",
+        "Eine etwas zu dunkle Belichtung"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kleine Belichtungs-, Farb- und Ausrichtungsfehler lassen sich gut korrigieren. Schlechtes Licht und ein überladenes Motiv dagegen kaum.",
+      "kidExplanation": "Schiefe Fotos kann man gerade drehen. Aber hässliches Licht kann man kaum reparieren."
+    },
+    {
+      "id": "wf-005",
+      "category": "workflow",
+      "difficulty": 1,
+      "text": "Welcher Modus ist ein guter erster Schritt raus aus der Vollautomatik?",
+      "options": [
+        "Zeitautomatik (A/Av) mit Auto-ISO",
+        "Bulb",
+        "Manuell ohne Belichtungsmesser",
+        "Video"
+      ],
+      "correctIndex": 0,
+      "explanation": "Du bestimmst die Blende und damit die Schärfentiefe, die Kamera kümmert sich um Zeit und ISO. So lernst du Schritt für Schritt.",
+      "kidExplanation": "Im Modus A bestimmst du das Loch, und die Kamera hilft beim Rest."
+    },
+    {
+      "id": "wf-006",
+      "category": "workflow",
+      "difficulty": 2,
+      "text": "Was macht eine teure Profikamera für Einsteiger?",
+      "options": [
+        "Sie macht nicht automatisch bessere Fotos – sie verlangt sogar mehr Können",
+        "Sie macht automatisch perfekte Fotos",
+        "Sie ersetzt das Lernen der Grundlagen",
+        "Sie braucht keine Einstellungen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bessere Bilder entstehen durch Können, Sehen und Licht. Neue Technik lohnt sich, wenn die vorhandene dich wirklich begrenzt.",
+      "kidExplanation": "Eine teure Kamera fotografiert nicht von allein besser. Gut hinschauen und üben ist wichtiger."
+    },
+    {
+      "id": "wf-007",
+      "category": "workflow",
+      "difficulty": 2,
+      "text": "Warum ist es anfangs oft besser, den internen Klappblitz auszulassen?",
+      "options": [
+        "Er macht hartes, flaches Licht und zerstört die Stimmung – besser Blende öffnen oder ISO erhöhen",
+        "Er verbraucht keinen Strom",
+        "Er macht die Bilder unscharf",
+        "Er funktioniert nur bei Sonne"
+      ],
+      "correctIndex": 0,
+      "explanation": "Der kleine Blitz direkt über dem Objektiv erzeugt harte Schatten und überstrahlte Gesichter. Offene Blende und höhere ISO wirken meist natürlicher.",
+      "kidExplanation": "Der kleine Blitz macht hässliche Schatten. Lieber das Loch größer machen oder die ISO hoch."
+    },
+    {
+      "id": "wf-008",
+      "category": "workflow",
+      "difficulty": 3,
+      "text": "Welche Übung hilft besonders, den Blick zu schulen?",
+      "options": [
+        "Einen Monat lang immer dasselbe Motiv auf neue Weise fotografieren",
+        "Möglichst viel neue Ausrüstung kaufen",
+        "Nur in der Vollautomatik fotografieren",
+        "Nie Fotos von anderen anschauen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Begrenzungen zwingen zu Kreativität: Wer dasselbe Motiv immer wieder neu fotografiert, entdeckt Perspektiven, Licht und Details.",
+      "kidExplanation": "Wenn du immer wieder dasselbe fotografierst, musst du dir jedes Mal etwas Neues ausdenken. So wirst du kreativ!"
+    },
+    {
+      "id": "aus-k01",
+      "category": "ausruestung",
+      "difficulty": 1,
+      "text": "Was unterscheidet eine spiegellose Systemkamera von einer Spiegelreflexkamera?",
+      "options": [
+        "Sie hat keinen Spiegel – das Bild kommt direkt vom Sensor in den elektronischen Sucher",
+        "Sie hat kein Objektiv",
+        "Sie kann keine Fotos speichern",
+        "Sie hat keinen Sensor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bei der Spiegelreflex lenkt ein Spiegel das Licht in den optischen Sucher. Spiegellose Kameras zeigen das Sensorbild elektronisch – inklusive Belichtungsvorschau.",
+      "kidExplanation": "Spiegellose Kameras haben innen keinen Spiegel. Im Sucher ist ein kleiner Bildschirm."
+    },
+    {
+      "id": "aus-k02",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Welcher Vorteil spricht typischerweise für eine Spiegelreflexkamera?",
+      "options": [
+        "Optischer Sucher ohne Verzögerung und lange Akkulaufzeit",
+        "Belichtungsvorschau im Sucher",
+        "Kleinere und leichtere Gehäuse",
+        "Lautloser elektronischer Verschluss als Standard"
+      ],
+      "correctIndex": 0,
+      "explanation": "Der optische Sucher zeigt das Motiv verzögerungsfrei und verbraucht keinen Strom. Belichtungsvorschau und kompakte Bauweise sind dagegen Stärken spiegelloser Kameras.",
+      "kidExplanation": "Bei der Spiegelreflex siehst du die echte Welt durch den Sucher, und der Akku hält lange."
+    },
+    {
+      "id": "aus-k03",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Was bringt ein größerer Sensor (z. B. Vollformat) bei gleicher Bildwirkung?",
+      "options": [
+        "Weniger Rauschen bei wenig Licht und mehr Hintergrundunschärfe",
+        "Automatisch schärfere Bilder bei jeder Blende",
+        "Eine längere Brennweite",
+        "Einen besseren Weißabgleich"
+      ],
+      "correctIndex": 0,
+      "explanation": "Größere Sensoren sammeln mehr Licht und ermöglichen geringere Schärfentiefe – sind aber teurer, größer und schwerer.",
+      "kidExplanation": "Ein großer Sensor fängt mehr Licht ein. Dann gibt es weniger Krümel, und der Hintergrund wird schöner verschwommen."
+    },
+    {
+      "id": "aus-k04",
+      "category": "ausruestung",
+      "difficulty": 2,
+      "text": "Wofür ist ein Makroobjektiv gemacht?",
+      "options": [
+        "Um sehr nah scharfzustellen und kleine Dinge groß abzubilden",
+        "Für weit entfernte Tiere",
+        "Für besonders weite Landschaften",
+        "Nur für Videos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Makroobjektive haben eine sehr kurze Naheinstellgrenze und bilden oft im Maßstab 1:1 ab – ideal für Insekten, Blüten und Details.",
+      "kidExplanation": "Mit einem Makroobjektiv kannst du ganz nah an einen Marienkäfer heran und ihn riesig fotografieren."
+    },
+    {
+      "id": "aus-k05",
+      "category": "ausruestung",
+      "difficulty": 3,
+      "text": "Was ist Vignettierung bei einem Objektiv?",
+      "options": [
+        "Dunkle Bildecken",
+        "Gebogene gerade Linien",
+        "Farbsäume an Kanten",
+        "Unscharfe Bildmitte"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vignettierung zeigt sich als Abdunklung zu den Bildecken, besonders bei offener Blende. Gebogene Linien heißen Verzeichnung, Farbsäume chromatische Aberration.",
+      "kidExplanation": "Vignettierung heißt: Die Ecken vom Bild sind dunkler."
+    },
+    {
+      "id": "gen-001",
+      "category": "genres",
+      "difficulty": 1,
+      "text": "Welche Blende passt typischerweise für ein Porträt mit unscharfem Hintergrund?",
+      "options": [
+        "f/1.8–f/4",
+        "f/11–f/16",
+        "f/22",
+        "Die Blende spielt keine Rolle"
+      ],
+      "correctIndex": 0,
+      "explanation": "Offene Blenden erzeugen geringe Schärfentiefe – die Person hebt sich vom weichen Hintergrund ab.",
+      "kidExplanation": "Für Porträts nimmst du ein großes Loch, also eine kleine Zahl wie f/2."
+    },
+    {
+      "id": "gen-002",
+      "category": "genres",
+      "difficulty": 1,
+      "text": "Welche Einstellungen passen zu einer Landschaft mit durchgehender Schärfe?",
+      "options": [
+        "Blende f/8–f/11 und niedrige ISO",
+        "Blende f/1.4 und ISO 6400",
+        "Blende f/2 und 1/4000 s",
+        "Vollautomatik mit Blitz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mittlere bis kleine Blenden liefern große Schärfentiefe, niedrige ISO beste Qualität. Bei wenig Licht hilft ein Stativ.",
+      "kidExplanation": "Bei Landschaften soll alles scharf sein – dafür ein kleines Loch wie f/8 und eine kleine ISO."
+    },
+    {
+      "id": "gen-003",
+      "category": "genres",
+      "difficulty": 2,
+      "text": "Was sind „stürzende Linien“?",
+      "options": [
+        "Senkrechte Gebäudekanten, die oben zusammenlaufen, wenn man die Kamera nach oben kippt",
+        "Ein Horizont, der schief ist",
+        "Linien, die durch Bewegung verwischen",
+        "Ein Fehler des Autofokus"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kippt man die Kamera nach oben, laufen Senkrechte zusammen – das Gebäude scheint zu kippen. Gerade halten, Abstand nehmen, Shift-Objektiv oder Korrektur in der Bearbeitung helfen.",
+      "kidExplanation": "Wenn du die Kamera nach oben kippst, sieht das Haus aus, als würde es umfallen."
+    },
+    {
+      "id": "gen-004",
+      "category": "genres",
+      "difficulty": 2,
+      "text": "Welche Verschlusszeit eignet sich für einen fliegenden Vogel?",
+      "options": [
+        "1/1000 s oder kürzer",
+        "1/30 s",
+        "1/4 s",
+        "2 s"
+      ],
+      "correctIndex": 0,
+      "explanation": "Schnelle Bewegungen brauchen sehr kurze Zeiten. Auto-ISO hilft, die nötige Helligkeit zu erreichen.",
+      "kidExplanation": "Ein fliegender Vogel ist superschnell – dafür brauchst du 1/1000 Sekunde."
+    },
+    {
+      "id": "gen-005",
+      "category": "genres",
+      "difficulty": 2,
+      "text": "Warum wird bei Konzerten meist ohne Blitz fotografiert?",
+      "options": [
+        "Blitzen ist oft verboten, stört Künstler und Publikum und zerstört die Lichtstimmung",
+        "Der Blitz macht die Bilder zu dunkel",
+        "Blitzen ist nur bei Sonne erlaubt",
+        "Der Blitz verbraucht zu viel Speicher"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statt Blitz nutzt man lichtstarke Objektive (f/1.8–f/2.8), hohe ISO und kurze Zeiten – das bewahrt auch die Bühnenstimmung.",
+      "kidExplanation": "Beim Konzert stört der Blitz alle und ist meist verboten. Großes Loch und hohe ISO helfen stattdessen."
+    },
+    {
+      "id": "gen-006",
+      "category": "genres",
+      "difficulty": 3,
+      "text": "Bei einem Konzert frisst das Gesicht im Scheinwerfer aus. Was hilft?",
+      "options": [
+        "Spotmessung auf das Gesicht oder Belichtungskorrektur ins Minus",
+        "Belichtungskorrektur ins Plus",
+        "Den Blitz einschalten",
+        "Eine längere Verschlusszeit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Die dunkle Bühne verleitet die Mehrfeldmessung zur Überbelichtung. Spotmessung oder Minuskorrektur schützen die hellen Gesichter.",
+      "kidExplanation": "Die Kamera denkt, alles ist dunkel, und macht es zu hell. Stell den ±-Regler ins Minus."
+    },
+    {
+      "id": "gen-007",
+      "category": "genres",
+      "difficulty": 2,
+      "text": "Wohin fokussiert man bei Landschaften ohne besonderes Hauptmotiv ungefähr?",
+      "options": [
+        "Etwa ein Drittel ins Bild hinein",
+        "Immer auf den Horizont",
+        "Auf den nächsten Grashalm",
+        "Gar nicht – manueller Fokus auf unendlich ist immer richtig"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ein Fokus etwa ein Drittel in die Szene nutzt die Schärfentiefe nach vorne und hinten am besten aus.",
+      "kidExplanation": "Stell ungefähr auf das scharf, was ein Stück vor dir liegt – nicht ganz vorne und nicht ganz hinten."
+    },
+    {
+      "id": "ges-012",
+      "category": "gestaltung",
+      "difficulty": 2,
+      "text": "Wohin setzt du das Hauptmotiv, wenn du mit der Fibonacci-Spirale gestaltest?",
+      "options": [
+        "Dorthin, wo sich die Spirale eng einrollt",
+        "An den Anfang des großen Bogens",
+        "Genau in die Bildmitte",
+        "Immer in die linke obere Ecke"
+      ],
+      "explanation": "Die Spirale führt den Blick vom weiten Bogen ins enge Zentrum – dort gehört das Hauptmotiv hin. Die Spirale kann gedreht und gespiegelt werden.",
+      "kidText": "Wo kommt das Motiv bei der Schneckenlinie hin?",
+      "kidExplanation": "Dorthin, wo die Schnecke ganz eng eingerollt ist – da schauen alle hin.",
+      "correctIndex": 0,
+      "sketch": {
+        "type": "spiral"
+      }
+    },
+    {
+      "id": "ges-013",
+      "category": "gestaltung",
+      "difficulty": 3,
+      "text": "Welche Zahlenfolge liegt der goldenen Spirale zugrunde?",
+      "options": [
+        "1, 1, 2, 3, 5, 8, 13 …",
+        "1, 2, 4, 8, 16, 32 …",
+        "1, 3, 5, 7, 9, 11 …",
+        "1, 4, 9, 16, 25 …"
+      ],
+      "explanation": "Fibonacci-Folge: Jede Zahl ist die Summe der beiden vorherigen. Das Verhältnis benachbarter Zahlen nähert sich 1,618 – dem goldenen Schnitt.",
+      "correctIndex": 0
+    },
+    {
+      "id": "mes-010",
+      "category": "messung",
+      "difficulty": 2,
+      "text": "Du fotografierst in einer dunklen Kirche mit hellen, bunten Fenstern. Was passiert mit Mehrfeldmessung?",
+      "options": [
+        "Der Raum wird aufgehellt, die Fenster brennen aus",
+        "Die Fenster werden korrekt, der Raum bleibt schwarz",
+        "Alles wird perfekt belichtet",
+        "Das Bild wird grünstichig"
+      ],
+      "explanation": "Die Mehrfeldmessung mittelt: Das große dunkle Kirchenschiff zieht die Belichtung nach oben, die kleinen hellen Fenster fressen aus. Spitzlichtmessung erhält die Fenster, macht aber den Raum dunkel.",
+      "correctIndex": 0,
+      "sketch": {
+        "type": "meter",
+        "scene": "church"
+      }
+    },
+    {
+      "id": "mes-011",
+      "category": "messung",
+      "difficulty": 1,
+      "text": "Die Sonne ist mit im Bild. Worauf solltest du NICHT messen?",
+      "options": [
+        "Auf die Sonne",
+        "Auf das Gesicht der Person",
+        "Auf die Wiese",
+        "Auf den blauen Himmel neben der Sonne"
+      ],
+      "explanation": "Die Sonne ist um ein Vielfaches heller als alles andere. Misst du auf sie (oder mit Spitzlichtmessung), wird der Rest des Bildes fast schwarz.",
+      "kidText": "Die Sonne ist im Bild. Wohin darfst du nicht messen?",
+      "kidExplanation": "Auf die Sonne! Sonst denkt die Kamera, alles ist superhell, und dein Foto wird schwarz.",
+      "correctIndex": 0
+    },
+    {
+      "id": "mes-012",
+      "category": "messung",
+      "difficulty": 2,
+      "text": "Mittags steht eine Person im Schatten eines Baumes, rundherum ist ein sonniger Platz. Die Mehrfeldmessung macht die Person …",
+      "options": [
+        "zu dunkel",
+        "zu hell",
+        "genau richtig",
+        "unscharf"
+      ],
+      "explanation": "Die hellen, sonnigen Flächen dominieren die Messung. Lösung: Spot auf das Gesicht, Plus-Korrektur oder ein Aufhellblitz.",
+      "correctIndex": 0,
+      "sketch": {
+        "type": "meter",
+        "scene": "noon"
+      }
+    },
+    {
+      "id": "blitz-013",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Aufhellblitz im Gegenlicht: Was stellst du zuerst ein?",
+      "options": [
+        "Blende, Zeit und ISO für das Umgebungslicht (Hintergrund)",
+        "Die volle Blitzleistung",
+        "Den Blitz an die Decke",
+        "Die längste Verschlusszeit"
+      ],
+      "explanation": "Erst wird das Umgebungslicht korrekt belichtet, dann der Blitz als Aufheller dosiert – meist 1 bis 2 Stufen schwächer als das Umgebungslicht.",
+      "kidText": "Du willst draußen den Blitz zum Aufhellen nutzen. Was machst du zuerst?",
+      "kidExplanation": "Erst die Kamera so einstellen, dass der Himmel schön ist. Dann kommt ein bisschen Blitz dazu.",
+      "correctIndex": 0
+    },
+    {
+      "id": "blitz-014",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Welche Blitzbelichtungskorrektur wirkt beim Aufhellblitz meist natürlich?",
+      "options": [
+        "−1 bis −2",
+        "+2 bis +3",
+        "Immer ±0",
+        "−5"
+      ],
+      "explanation": "Der Blitz soll Schatten nur aufhellen, nicht ganz entfernen. Etwa 1–2 Stufen unter dem Umgebungslicht sieht natürlich aus.",
+      "correctIndex": 0
+    },
+    {
+      "id": "blitz-015",
+      "category": "blitz",
+      "difficulty": 2,
+      "text": "Du stehst mittig in einem 4 m breiten Raum, die Person steht 4 m vor dir. Du drehst den Blitzkopf aus deiner Sicht um 45° nach links gegen die Seitenwand. Wie kommt das Licht zur Person?",
+      "options": [
+        "Es prallt unter 45° von der linken Wand ab und trifft die Person schräg von vorne links (aus deiner Sicht)",
+        "Es kommt senkrecht von oben auf die Person",
+        "Es wird direkt zu dir zurückgeworfen",
+        "Es trifft die Person von hinten"
+      ],
+      "explanation": "Einfallswinkel = Ausfallswinkel: Das Licht trifft die Wand 2 m links von dir etwa 2 m vor der Kamera und wird unter 45° nach vorne rechts reflektiert. Diese Hauptreflexion kreuzt die Raummitte genau bei 4 m – dort steht die Person. Stünde sie näher, bekäme sie nur das schwächere Streulicht der Wand.",
+      "correctIndex": 0,
+      "kidText": "Der Raum ist 4 m breit, die Person steht 4 m vor dir. Du drehst den Blitz schräg nach links an die Wand. Wie kommt das Licht zur Person?",
+      "kidExplanation": "Licht prallt von der Wand ab wie ein Ball von der Bande: im gleichen Winkel. So landet es schräg von vorne bei der Person.",
+      "sketch": {
+        "type": "flash",
+        "dir": "left45",
+        "dist": 4
+      }
+    },
+    {
+      "id": "blitz-016",
+      "category": "blitz",
+      "difficulty": 1,
+      "text": "Warum bringt indirektes Blitzen draußen auf einer Wiese kaum etwas?",
+      "options": [
+        "Es gibt keine Decke oder Wand, die das Licht zurückwirft",
+        "Weil der Blitz draußen nicht zündet",
+        "Weil der Weißabgleich nicht passt",
+        "Weil die Sonne den Blitz ausschaltet"
+      ],
+      "explanation": "Indirektes Blitzen braucht eine Fläche zum Reflektieren. Draußen verpufft das Licht – richte den Blitz direkt nach vorne.",
+      "kidExplanation": "Draußen ist keine Decke da, die das Licht zurückwirft. Das Licht fliegt einfach in den Himmel.",
+      "correctIndex": 0,
+      "sketch": {
+        "type": "flash",
+        "scene": "backlight",
+        "dir": "ceiling",
+        "dist": 2
+      }
+    },
+    {
+      "id": "kam-027",
+      "category": "kamera",
+      "cameras": [
+        "canon-r5ii"
+      ],
+      "difficulty": 2,
+      "text": "Die EOS R5 Mark II hat kein Modusrad. Wie wechselst du von Av zu M?",
+      "options": [
+        "MODE-Taste drücken und mit dem Hauptwahlrad M wählen",
+        "Am Steuerring des Objektivs drehen",
+        "Q-Taste drücken und den Modus im Menü suchen",
+        "Das geht nur im Hauptmenü unter „Aufnahme“"
+      ],
+      "explanation": "Bei der R5 Mark II drückst du die MODE-Taste oben und wählst den Modus mit dem Hauptwahlrad; er wird im Schulterdisplay und im Sucher angezeigt.",
+      "correctIndex": 0
+    },
+    {
+      "id": "kam-028",
+      "category": "kamera",
+      "cameras": [
+        "nikon-d850",
+        "nikon-z8"
+      ],
+      "difficulty": 2,
+      "text": "Wie stellst du an der Nikon D850 oder Z8 den Modus A (Zeitautomatik) ein?",
+      "options": [
+        "MODE-Taste gedrückt halten und am Haupteinstellrad drehen",
+        "Am Modusrad oben links drehen",
+        "i-Taste drücken und „A“ wählen",
+        "Am Subeinstellrad vorne drehen"
+      ],
+      "explanation": "Die großen Nikon-Modelle haben kein Modusrad. Nach dem Nikon-Prinzip „Taste halten + Rad drehen“ wählst du den Modus mit MODE + Haupteinstellrad.",
+      "correctIndex": 0
+    },
+    {
+      "id": "kam-029",
+      "category": "kamera",
+      "cameras": [
+        "canon-5div"
+      ],
+      "difficulty": 2,
+      "text": "An der EOS 5D Mark IV reagiert das große Rad hinten nicht, wenn du die Belichtungskorrektur ändern willst. Woran liegt das meistens?",
+      "options": [
+        "Der Sperrschalter LOCK ist eingeschaltet",
+        "Die Kamera steht im Modus Av",
+        "Auto-ISO ist ausgeschaltet",
+        "Der Akku ist fast leer"
+      ],
+      "explanation": "Der LOCK-Schalter sperrt das Schnellwahlrad gegen versehentliches Verstellen. Schalter umlegen – dann ändert das Rad in P, Av und Tv die Belichtungskorrektur.",
+      "correctIndex": 0
+    },
+    {
+      "id": "kam-030",
+      "category": "kamera",
+      "cameras": [
+        "nikon-d850",
+        "nikon-z8"
+      ],
+      "difficulty": 1,
+      "text": "Welchen Modus nimmst du an der D850 oder Z8 als einfachsten Einstieg, da es keine Vollautomatik gibt?",
+      "options": [
+        "P mit Auto-ISO",
+        "M ohne Auto-ISO",
+        "Bulb",
+        "S mit 1/8000 s"
+      ],
+      "explanation": "Die Profimodelle haben keine Vollautomatik. P mit Auto-ISO wählt Blende, Zeit und ISO selbst und lässt sich trotzdem korrigieren.",
+      "correctIndex": 0
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+name: Inhalte prüfen
+
+# Prüft bei jeder Änderung, ob die Datenbank gültig ist und die Version erhöht wurde.
+# Ein rotes Kreuz bei GitHub heißt: Die Datei hat einen Fehler – Details unter „Actions“.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Vorherige Version holen
+        run: git show HEAD~1:inhalte/aktuell.json > /tmp/vorher.json 2>/dev/null || rm -f /tmp/vorher.json
+      - name: Datenbank prüfen
+        run: |
+          if [ -s /tmp/vorher.json ] && ! cmp -s /tmp/vorher.json inhalte/aktuell.json; then
+            python3 pruefen.py inhalte/aktuell.json --vorher /tmp/vorher.json
+          else
+            python3 pruefen.py inhalte/aktuell.json
+          fi
