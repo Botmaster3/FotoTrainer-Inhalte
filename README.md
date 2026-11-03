@@ -6,7 +6,7 @@ Das Programm selbst liegt in einem anderen, privaten Repository.
 Die FotoTrainer-Apps für Mac, Windows und Browser fragen beim Start nach, ob es hier eine neuere Version gibt. Sie lesen dafür diese Adresse:
 
 ```
-https://raw.githubusercontent.com/botmaster3/FotoTrainer-Inhalte/main/inhalte/aktuell.json
+https://raw.githubusercontent.com/Botmaster3/fototrainer-inhalte/main/inhalte/aktuell.json
 ```
 
 Dabei werden **keine persönlichen Daten** übertragen, weder Profile noch Lernstand.
